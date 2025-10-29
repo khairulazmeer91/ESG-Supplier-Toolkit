@@ -129,13 +129,96 @@
         <section id="data" class="bg-white p-8 rounded-xl shadow-lg border-l-4 border-[color:var(--primary)]">
           <h2 class="text-2xl font-bold text-[color:var(--primary)]">ESG Data We Require</h2>
           <p class="mt-4 text-gray-700">We will collect supplier-level ESG data to support NSRF alignment and our public disclosures. The data request will be phased and proportionate to the supplier's size and risk profile.</p>
-          <!-- (Content unchanged for brevity) -->
+          <!-- Horizontal Grid for Data Categories - UPDATED with Icons and Centering -->
+          <div class="mt-6 grid grid-cols-1 md:grid-cols-3 gap-6">
+            
+            <!-- Environmental Card -->
+            <div class="bg-[color:var(--primary)]/5 p-5 rounded-xl shadow-md border-t-4 border-[color:var(--accent)] text-center">
+              <!-- Environmental Icon (Tree/Leaf) - UPDATED -->
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-8 h-8 mx-auto mb-2 text-[color:var(--accent)]">
+                <path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z"/>
+                <path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"/>
+              </svg>
+              <h3 class="font-bold text-lg text-[color:var(--primary)]">Environmental</h3>
+              <ul class="mt-3 text-sm text-gray-700 list-disc text-left pl-5 space-y-2">
+                <li>Energy consumption (monthly/annual kWh) and fuel usage (L)</li>
+                <li>Water consumption (m³) and any water recycling initiatives</li>
+                <li>Waste generation volumes and disposal routes</li>
+                <li>Valid environmental permits / licenses</li>
+              </ul>
+            </div>
+
+            <!-- Social Card -->
+            <div class="bg-[color:var(--primary)]/5 p-5 rounded-xl shadow-md border-t-4 border-[color:var(--accent)] text-center">
+              <!-- Social Icon (Users/Handshake) - UPDATED -->
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-8 h-8 mx-auto mb-2 text-[color:var(--accent)]">
+                <path d="M18 21a8 8 0 0 0-16 0"/>
+                <circle cx="10" cy="8" r="5"/>
+                <path d="M22 20c0-3.37-2-6.5-4-8a5 5 0 0 0-.45-8.3"/>
+              </svg>
+              <h3 class="font-bold text-lg text-[color:var(--primary)]">Social</h3>
+              <ul class="mt-3 text-sm text-gray-700 list-disc text-left pl-5 space-y-2">
+                <li>Workforce size by gender and employment type</li>
+                <li>Wage and overtime policies; sample payslip availability</li>
+                <li>Accident / injury records and remediation actions</li>
+                <li>Number of training hours on safety and ESG topics</li>
+              </ul>
+            </div>
+
+            <!-- Governance Card -->
+            <div class="bg-[color:var(--primary)]/5 p-5 rounded-xl shadow-md border-t-4 border-[color:var(--accent)] text-center">
+              <!-- Governance Icon (Shield/Gavel) - UPDATED -->
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-8 h-8 mx-auto mb-2 text-[color:var(--accent)]">
+                <path d="m16 16 3-8 3 8c-.87.65-1.92 1-3 1s-2.13-.35-3-1Z"/>
+                <path d="m2 16 3-8 3 8c-.87.65-1.92 1-3 1s-2.13-.35-3-1Z"/>
+                <path d="M7 21h10"/>
+                <path d="M12 3v18"/>
+                <path d="M3 7h2c2 0 5-1 7-2 2 1 5 2 7 2h2"/>
+              </svg>
+              <h3 class="font-bold text-lg text-[color:var(--primary)]">Governance</h3>
+              <ul class="mt-3 text-sm text-gray-700 list-disc text-left pl-5 space-y-2">
+                <li>Anti-bribery/anti-corruption policy and training records</li>
+                <li>Data protection/privacy policy</li>
+                <li>Company Code of Conduct</li>
+                <li>Grievances and Whistleblowing platform</li>
+              </ul>
+            </div>
+          </div>
+          <!-- End Horizontal Grid -->
+          <p class="mt-6 text-sm text-gray-600">All data will be treated confidentially and used to produce aggregated metrics for disclosure. Smaller suppliers may submit simplified templates; Loob will provide guidance and support to help suppliers collect the necessary data.</p>    
         </section>
 
         <section id="readiness" class="bg-white p-8 rounded-xl shadow-lg border-l-4 border-[color:var(--primary)]">
           <h2 class="text-2xl font-bold text-[color:var(--primary)]">Environmental Readiness & Stewardship Program</h2>
-          <p class="mt-4 text-gray-700">Our staged approach helps suppliers progress from awareness to measurable action.</p>
-          <!-- (Content unchanged for brevity) -->
+          <p class="mt-4 text-gray-700">Our staged approach helps suppliers progress from awareness to measurable action.</p
+          
+          <ol class="mt-6 list-decimal list-outside pl-6 space-y-4 text-gray-700">
+            <li>
+              <strong>Readiness Survey (Q2 2026)</strong> – Quick self-report on energy, water, waste and packaging practices.
+            </li>
+            <li>
+              <strong>Targeted Engagement</strong> – Capacity building, workshops and pilot projects for selected suppliers.
+            </li>
+            <li>
+              <strong>Stewardship</strong> – Pilot implementation support (e.g., energy audit, packaging trial) and performance monitoring.
+            </li>
+            <li>
+              <strong>Recognition</strong> – ‘Sustainability Champion’ status in annual reporting and procurement preference.
+            </li>
+          </ol>
+
+          <div class="mt-6 flex flex-wrap gap-4">
+            <!-- Button using accent color -->
+            <a href="#" class="inline-flex items-center gap-2 px-6 py-3 bg-[color:var(--accent)] text-white font-semibold rounded-lg shadow-md hover:bg-opacity-90 transition duration-150">Sign up for Supplier Webinar</a>
+            <a href="#" class="inline-flex items-center gap-2 px-6 py-3 border border-gray-300 rounded-lg text-gray-700 hover:bg-gray-100 transition duration-150">Download Readiness Template</a>
+          </div>
+        </section>
+
+        <!-- Reporting -->
+        <section id="reporting" class="bg-white p-8 rounded-xl shadow-lg border-l-4 border-[color:var(--primary)]">
+          <h2 class="text-2xl font-bold text-[color:var(--primary)]">Reporting & Transparency</h2>
+          <p class="mt-4 text-gray-700">As we prepare for public listing, Loob will disclose aggregated supplier engagement metrics and progress in our annual Sustainability Report. We will publish key indicators such as percentage of suppliers assessed, share of suppliers with environmental management measures, and case studies showcasing improvements.</p>
+        
         </section>
       </article>
 
@@ -201,3 +284,4 @@
   </script>
 </body>
 </html>
+

@@ -1,320 +1,316 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Supplier Sustainability Toolkit | Loob Holding Sdn Bhd</title>
-  <meta name="description" content="The Supplier Sustainability Toolkit helps our suppliers understand ESG expectations, align with the National Sustainability Reporting Framework (NSRF), and strengthen collective readiness for transparent sustainability reporting." />
-  
-  <!-- Load Tailwind CSS -->
-  <script src="https://cdn.tailwindcss.com"></script>
-  
-  <!-- Load Roboto Font from Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
-  
-  <style>
-    /* Corporate Colors */
-    :root { 
-      --primary: #224169; /* Dark Blue */
-      --accent: #EC4A25;  /* Orange-Red */
-    }
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Supplier Sustainability Toolkit | Loob Holding Sdn Bhd</title>
+  <meta name="description" content="The Supplier Sustainability Toolkit helps our suppliers understand ESG expectations, align with the National Sustainability Reporting Framework (NSRF), and strengthen collective readiness for transparent sustainability reporting." />
+  
+  <!-- Load Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <!-- Load Roboto Font from Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+  
+  <style>
+    /* Corporate Colors */
+    :root { 
+      --primary: #224169; /* Dark Blue */
+      --accent: #EC4A25;  /* Orange-Red */
+    }
 
-    /* Accessibility helpers */
-    .focus-outline:focus { 
-      outline: 3px solid rgba(34, 65, 105, 0.25); /* Uses the primary color for focus */
-      outline-offset: 3px; 
-    }
+    /* Accessibility helpers */
+    .focus-outline:focus { 
+      outline: 3px solid rgba(34, 65, 105, 0.25); /* Uses the primary color for focus */
+      outline-offset: 3px; 
+    }
 
-    /* Apply Roboto globally */
-    .font-roboto {
-      font-family: 'Roboto', sans-serif;
-    }
-  </style>
+    /* Apply Roboto globally */
+    .font-roboto {
+      font-family: 'Roboto', sans-serif;
+    }
+  </style>
 </head>
 <!-- Apply Roboto font globally -->
 <body class="bg-gray-50 text-gray-800 antialiased font-roboto">
-  
-  <!-- Header / Navigation Bar (Kept w-16 h-16 and text-2xl from previous request) -->
-  <header class="bg-[color:var(--primary)] sticky top-0 z-10">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="flex items-center justify-between h-16">
-        <div class="flex items-center gap-4">
-          <!-- Company Logo -->
-          <img 
-            src="./Loob Holding Logo.png" 
-            alt="Loob Holding Logo" 
-            class="w-16 h-16 rounded-md object-contain"
-            onerror="this.onerror=null; this.src='https://placehold.co/64x64/224169/ffffff?text=Logo';"
-          >
-          <div>
-            <a href="#" class="text-2xl font-semibold text-white">Loob Holding Sdn Bhd</a>
-            <div class="text-xs text-gray-200">Supplier Sustainability Toolkit</div>
-          </div>
-        </div>
-        
-        <!-- Desktop Nav Links -->
-        <nav class="hidden md:flex items-center gap-6 text-sm text-white">
-          <a href="#expectations" class="hover:text-[color:var(--accent)] transition duration-150 focus-outline">Expectations</a>
-          <a href="#data" class="hover:text-[color:var(--accent)] transition duration-150 focus-outline">Reporting Data</a>
-          <a href="#readiness" class="hover:text-[color:var(--accent)] transition duration-150 focus-outline">Readiness</a>
-          <a href="#resources" class="hover:text-[color:var(--accent)] transition duration-150 focus-outline">Resources</a>
-          <a href="#contact" class="text-sm px-4 py-2 border border-gray-300 rounded-md bg-white text-[color:var(--primary)] hover:bg-gray-200 transition duration-150">Contact</a>
-        </nav>
-        
-        <!-- Mobile Menu Button -->
-        <div class="md:hidden">
-          <button id="mobileMenuBtn" aria-expanded="false" class="p-2 rounded-md focus-outline text-white">
-            <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/></svg>
-          </button>
-        </div>
-      </div>
-    </div>
-  </header>
+  
+  <!-- Header / Navigation Bar -->
+  <header class="bg-[color:var(--primary)] sticky top-0 z-10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-16">
+        <div class="flex items-center gap-4">
+          <!-- Company Logo -->
+          <img 
+            src="./Loob Holding Logo.png" 
+            alt="Loob Holding Logo" 
+            class="w-16 h-16 rounded-md object-contain"
+            onerror="this.onerror=null; this.src='https://placehold.co/64x64/224169/ffffff?text=Logo';"
+          >
+          <div>
+            <a href="#" class="text-2xl font-semibold text-white">Loob Holding Sdn Bhd</a>
+            <div class="text-xs text-gray-200">Supplier Sustainability Toolkit</div>
+          </div>
+        </div>
+        
+        <!-- Desktop Nav Links -->
+        <nav class="hidden md:flex items-center gap-6 text-sm text-white">
+          <a href="#expectations" class="hover:text-[color:var(--accent)] transition duration-150 focus-outline">Expectations</a>
+          <a href="#data" class="hover:text-[color:var(--accent)] transition duration-150 focus-outline">Reporting Data</a>
+          <a href="#readiness" class="hover:text-[color:var(--accent)] transition duration-150 focus-outline">Readiness</a>
+          <a href="#resources" class="hover:text-[color:var(--accent)] transition duration-150 focus-outline">Resources</a>
+          <a href="#contact" class="text-sm px-4 py-2 border border-gray-300 rounded-md bg-white text-[color:var(--primary)] hover:bg-gray-200 transition duration-150">Contact</a>
+        </nav>
+        
+        <!-- Mobile Menu Button -->
+        <div class="md:hidden">
+          <button id="mobileMenuBtn" aria-expanded="false" class="p-2 rounded-md focus-outline text-white">
+            <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/></svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
 
-  <!-- Main Content Area -->
-  <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-    
-    <!-- Hero Section -->
-    <section class="bg-white rounded-3xl shadow-xl p-8 md:flex md:items-center md:gap-8 border-t-4 border-[color:var(--accent)]">
-      <div class="md:flex-1">
-        <h1 class="text-3xl md:text-4xl font-extrabold text-gray-900 leading-tight">Supplier Sustainability Toolkit</h1>
-        <p class="mt-4 text-lg text-gray-600">This Toolkit complements our Supplier Code of Conduct (SCOC) and provides suppliers with practical steps, templates and resources to progressively meet our ESG expectations. It also outlines the data we will require to support National Sustainability Reporting Framework (NSRF) compliance and our public reporting obligations.</p>
-        <div class="mt-8 flex flex-wrap gap-4">
-          <!-- Primary button using accent color -->
-          <a href="#expectations" class="inline-flex items-center justify-center gap-2 px-6 py-3 bg-[color:var(--accent)] text-white font-semibold rounded-lg shadow-md hover:bg-opacity-90 transition duration-150 ease-in-out">
-            View Expectations
-          </a>
-          <a href="#readiness" class="inline-flex items-center justify-center gap-2 px-6 py-3 border border-gray-300 rounded-lg text-gray-700 hover:bg-gray-100 transition duration-150 ease-in-out">
-            Take the Readiness Survey
-          </a>
-        </div>
-      </div>
-      
-      <!-- Quick Facts Sidebar -->
-      <div class="mt-8 md:mt-0 md:w-80">
-        <div class="bg-[color:var(--primary)]/5 p-5 rounded-xl border border-[color:var(--primary)]/20 shadow-inner">
-          <h3 class="text-sm font-bold text-[color:var(--primary)] tracking-wider uppercase">Quick facts</h3>
-          <ul class="mt-3 text-sm text-gray-700 space-y-2">
-            <li><span class="text-[color:var(--accent)] font-bold">●</span> Aligned with Loob's SCOC and NSRF issued by the Securities Commission Malaysia.</li>
-            <li><span class="text-[color:var(--accent)] font-bold">●</span> Toolkit designed to strengthen supplier readiness for future ESG reporting and disclosure.</li>
-            <li><span class="text-[color:var(--accent)] font-bold">●</span> Readiness Survey launching in 2026 to assess supplier alignment and data availability.</li>
-          </ul>
-        </div>
-      </div>
-    </section>
+  <!-- Main Content Area -->
+  <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+    
+    <!-- Hero Section -->
+    <section class="bg-white rounded-3xl shadow-xl p-8 md:flex md:items-center md:gap-8 border-t-4 border-[color:var(--accent)]">
+      <div class="md:flex-1">
+        <h1 class="text-3xl md:text-4xl font-extrabold text-gray-900 leading-tight">Supplier Sustainability Toolkit</h1>
+        <p class="mt-4 text-lg text-gray-600">This Toolkit complements our Supplier Code of Conduct (SCOC) and provides suppliers with practical steps, templates and resources to progressively meet our ESG expectations. It also outlines the data we will require to support National Sustainability Reporting Framework (NSRF) compliance and our public reporting obligations.</p>
+        <div class="mt-8 flex flex-wrap gap-4">
+          <!-- Primary button using accent color -->
+          <a href="#expectations" class="inline-flex items-center justify-center gap-2 px-6 py-3 bg-[color:var(--accent)] text-white font-semibold rounded-lg shadow-md hover:bg-opacity-90 transition duration-150 ease-in-out focus-outline">
+            View Expectations
+          </a>
+          <a href="#readiness" class="inline-flex items-center justify-center gap-2 px-6 py-3 border border-gray-300 rounded-lg text-gray-700 hover:bg-gray-100 transition duration-150 ease-in-out focus-outline">
+            Take the Readiness Survey
+          </a>
+        </div>
+      </div>
+      
+      <!-- Quick Facts Sidebar -->
+      <div class="mt-8 md:mt-0 md:w-80">
+        <div class="bg-[color:var(--primary)]/5 p-5 rounded-xl border border-[color:var(--primary)]/20 shadow-inner">
+          <h3 class="text-sm font-bold text-[color:var(--primary)] tracking-wider uppercase">Quick facts</h3>
+          <ul class="mt-3 text-sm text-gray-700 space-y-2">
+            <li><span class="text-[color:var(--accent)] font-bold">●</span> Aligned with Loob's SCOC and NSRF issued by the Securities Commission Malaysia.</li>
+            <li><span class="text-[color:var(--accent)] font-bold">●</span> Toolkit designed to strengthen supplier readiness for future ESG reporting and disclosure.</li>
+            <li><span class="text-[color:var(--accent)] font-bold">●</span> Readiness Survey launching in 2026 to assess supplier alignment and data availability.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
 
-    <!-- Main content grid -->
-    <div class="mt-12 grid grid-cols-1 lg:grid-cols-3 gap-10">
-      
-      <!-- Left column - Main content -->
-      <article class="lg:col-span-2 space-y-10">
+    <!-- Main content grid -->
+    <div class="mt-12 grid grid-cols-1 lg:grid-cols-3 gap-10">
+      
+      <!-- Left column - Main content -->
+      <article class="lg:col-span-2 space-y-8"> <!-- Adjusted spacing to space-y-8 for consistency -->
 
-        <!-- Expectations -->
-        <section id="expectations" class="bg-white p-8 rounded-xl shadow-lg border-l-4 border-[color:var(--primary)]">
-          <div class="flex items-start justify-between">
-            <h2 class="text-2xl font-bold text-[color:var(--primary)]">Supplier Expectations</h2>
-            <span class="text-sm text-gray-500 bg-gray-100 px-3 py-1 rounded-full">SCOC Sections 3.1 – 3.5</span>
-          </div>
+        <!-- Expectations -->
+        <section id="expectations" class="bg-white p-8 rounded-xl shadow-lg border-l-4 border-[color:var(--primary)]">
+          <div class="flex items-start justify-between">
+            <h2 class="text-2xl font-bold text-[color:var(--primary)]">Supplier Expectations</h2>
+            <span class="text-sm text-gray-500 bg-gray-100 px-3 py-1 rounded-full">SCOC Sections 3.1 – 3.5</span>
+          </div>
 
-          <div class="mt-6 grid grid-cols-1 md:grid-cols-2 gap-6">
-            <!-- Labour -->
-            <div class="p-5 border border-gray-200 rounded-xl hover:border-[color:var(--accent)] transition duration-200">
-              <h3 class="font-bold text-lg text-[color:var(--primary)]">Labour & Human Rights</h3>
-              <p class="mt-2 text-sm text-gray-600">No forced or child labour, fair wages, working hours compliant with law, non-discrimination, and freedom of association.</p>
-            </div>
-            <!-- Health & Safety -->
-            <div class="p-5 border border-gray-200 rounded-xl hover:border-[color:var(--accent)] transition duration-200">
-              <h3 class="font-bold text-lg text-[color:var(--primary)]">Health & Safety</h3>
-              <p class="mt-2 text-sm text-gray-600">Safe workplace, emergency plans, workers training, proper worker accommodation where provided (Act 446 compliance where applicable).</p>
-            </div>
-            <!-- Environment -->
-            <div class="p-5 border border-gray-200 rounded-xl hover:border-[color:var(--accent)] transition duration-200">
-              <h3 class="font-bold text-lg text-[color:var(--primary)]">Environmental Responsibility</h3>
-              <p class="mt-2 text-sm text-gray-600">Legal compliance for environmental permits, waste & chemical handling, resource efficiency, and progressive measures for GHG reduction.</p>
-            </div>
-            <!-- Ethics -->
-            <div class="p-5 border border-gray-200 rounded-xl hover:border-[color:var(--accent)] transition duration-200">
-              <h3 class="font-bold text-lg text-[color:var(--primary)]">Ethics & Governance</h3>
-              <p class="mt-2 text-sm text-gray-600">Zero tolerance for bribery/corruption, confidentiality & data protection, responsible sourcing and traceability where relevant.</p>
-            </div>
-          </div>
+          <div class="mt-6 grid grid-cols-1 md:grid-cols-2 gap-6">
+            <!-- Labour -->
+            <div class="p-5 border border-gray-200 rounded-xl hover:border-[color:var(--accent)] transition duration-200">
+              <h3 class="font-bold text-lg text-[color:var(--primary)]">Labour & Human Rights</h3>
+              <p class="mt-2 text-sm text-gray-600">No forced or child labour, fair wages, working hours compliant with law, non-discrimination, and freedom of association.</p>
+            </div>
+            <!-- Health & Safety -->
+            <div class="p-5 border border-gray-200 rounded-xl hover:border-[color:var(--accent)] transition duration-200">
+              <h3 class="font-bold text-lg text-[color:var(--primary)]">Health & Safety</h3>
+              <p class="mt-2 text-sm text-gray-600">Safe workplace, emergency plans, workers training, proper worker accommodation where provided (Act 446 compliance where applicable).</p>
+            </div>
+            <!-- Environment -->
+            <div class="p-5 border border-gray-200 rounded-xl hover:border-[color:var(--accent)] transition duration-200">
+              <h3 class="font-bold text-lg text-[color:var(--primary)]">Environmental Responsibility</h3>
+              <p class="mt-2 text-sm text-gray-600">Legal compliance for environmental permits, waste & chemical handling, resource efficiency, and progressive measures for GHG reduction.</p>
+            </div>
+            <!-- Ethics -->
+            <div class="p-5 border border-gray-200 rounded-xl hover:border-[color:var(--accent)] transition duration-200">
+              <h3 class="font-bold text-lg text-[color:var(--primary)]">Ethics & Governance</h3>
+              <p class="mt-2 text-sm text-gray-600">Zero tolerance for bribery/corruption, confidentiality & data protection, responsible sourcing and traceability where relevant.</p>
+            </div>
+          </div>
 
-          <div class="mt-6 text-sm text-gray-500 p-3 bg-gray-50 rounded-lg border border-gray-200">
-            Where gaps are identified, Loob will work collaboratively with suppliers to improve practices and provide targeted support rather than immediate termination for honest non-compliance.
-          </div>
-        </section>
+          <div class="mt-6 text-sm text-gray-500 p-3 bg-gray-50 rounded-lg border border-gray-200">
+            Where gaps are identified, Loob will work collaboratively with suppliers to improve practices and provide targeted support rather than immediate termination for honest non-compliance.
+          </div>
+        </section>
 
-        <!-- Data required (Horizontal Card Layout) -->
-        <section id="data" class="bg-white p-8 rounded-xl shadow-lg border-l-4 border-[color:var(--primary)]">
-          <h2 class="text-2xl font-bold text-[color:var(--primary)]">ESG Data We Require</h2>
-          <p class="mt-4 text-gray-700">We will collect supplier-level ESG data to support NSRF alignment and our public disclosures. The data request will be phased and proportionate to the supplier's size and risk profile.</p>
+        <!-- Data required (Horizontal Card Layout) -->
+        <section id="data" class="bg-white p-8 rounded-xl shadow-lg border-l-4 border-[color:var(--primary)]">
+          <h2 class="text-2xl font-bold text-[color:var(--primary)]">ESG Data We Require</h2>
+          <p class="mt-4 text-gray-700">We will collect supplier-level ESG data to support NSRF alignment and our public disclosures. The data request will be phased and proportionate to the supplier's size and risk profile.</p>
 
-          <!-- Horizontal Grid for Data Categories - UPDATED with Icons and Centering -->
-          <div class="mt-6 grid grid-cols-1 md:grid-cols-3 gap-6">
+          <!-- Horizontal Grid for Data Categories - UPDATED with Icons and Centering -->
+          <div class="mt-6 grid grid-cols-1 md:grid-cols-3 gap-6">
+            
+            <!-- Environmental Card -->
+            <div class="bg-[color:var(--primary)]/5 p-5 rounded-xl shadow-md border-t-4 border-[color:var(--accent)] text-center">
+              <!-- Environmental Icon (Tree/Leaf) -->
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-8 h-8 mx-auto mb-2 text-[color:var(--accent)]">
+                <path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z"/>
+                <path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"/>
+              </svg>
+              <h3 class="font-bold text-lg text-[color:var(--primary)]">Environmental</h3>
+              <ul class="mt-3 text-sm text-gray-700 list-disc text-left pl-5 space-y-2">
+                <li>Energy consumption (monthly/annual kWh) and fuel usage (L)</li>
+                <li>Water consumption (m³) and any water recycling initiatives</li>
+                <li>Waste generation volumes and disposal routes</li>
+                <li>Valid environmental permits / licenses</li>
+              </ul>
+            </div>
+
+            <!-- Social Card -->
+            <div class="bg-[color:var(--primary)]/5 p-5 rounded-xl shadow-md border-t-4 border-[color:var(--accent)] text-center">
+              <!-- Social Icon (Users/Handshake) -->
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-8 h-8 mx-auto mb-2 text-[color:var(--accent)]">
+                <path d="M18 21a8 8 0 0 0-16 0"/>
+                <circle cx="10" cy="8" r="5"/>
+                <path d="M22 20c0-3.37-2-6.5-4-8a5 5 0 0 0-.45-8.3"/>
+              </svg>
+              <h3 class="font-bold text-lg text-[color:var(--primary)]">Social</h3>
+              <ul class="mt-3 text-sm text-gray-700 list-disc text-left pl-5 space-y-2">
+                <li>Workforce size by gender and employment type</li>
+                <li>Wage and overtime policies; sample payslip availability</li>
+                <li>Accident / injury records and remediation actions</li>
+                <li>Number of training hours on safety and ESG topics</li>
+              </ul>
+            </div>
+
+            <!-- Governance Card -->
+            <div class="bg-[color:var(--primary)]/5 p-5 rounded-xl shadow-md border-t-4 border-[color:var(--accent)] text-center">
+              <!-- Governance Icon (Shield/Gavel) -->
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-8 h-8 mx-auto mb-2 text-[color:var(--accent)]">
+                <path d="m16 16 3-8 3 8c-.87.65-1.92 1-3 1s-2.13-.35-3-1Z"/>
+                <path d="m2 16 3-8 3 8c-.87.65-1.92 1-3 1s-2.13-.35-3-1Z"/>
+                <path d="M7 21h10"/>
+                <path d="M12 3v18"/>
+                <path d="M3 7h2c2 0 5-1 7-2 2 1 5 2 7 2h2"/>
+              </svg>
+              <h3 class="font-bold text-lg text-[color:var(--primary)]">Governance</h3>
+              <ul class="mt-3 text-sm text-gray-700 list-disc text-left pl-5 space-y-2">
+                <li>Anti-bribery/anti-corruption policy and training records</li>
+                <li>Data protection/privacy policy</li>
+                <li>Company Code of Conduct</li>
+                <li>Grievances and Whistleblowing platform</li>
+              </ul>
+            </div>
+          </div>
+          <!-- End Horizontal Grid -->
+
+          <p class="mt-6 text-sm text-gray-600">All data will be treated confidentially and used to produce aggregated metrics for disclosure. Smaller suppliers may submit simplified templates; Loob will provide guidance and support to help suppliers collect the necessary data.</p>
+        </section>
+
+        <!-- Readiness and Stewardship -->
+        <section id="readiness" class="bg-white p-8 rounded-xl shadow-lg border-l-4 border-[color:var(--primary)]">
+          <h2 class="text-2xl font-bold text-[color:var(--primary)]">Environmental Readiness & Stewardship Program</h2>
+          <p class="mt-4 text-gray-700">Our staged approach helps suppliers progress from awareness to measurable action.</p>
+
+          <ol class="mt-6 list-decimal list-outside pl-6 space-y-4 text-gray-700">
+            <li>
+              <strong>Readiness Survey (Q2 2026)</strong> – Quick self-report on energy, water, waste and packaging practices.
+            </li>
+            <li>
+              <strong>Targeted Engagement</strong> – Capacity building, workshops and pilot projects for selected suppliers.
+            </li>
+            <li>
+              <strong>Stewardship</strong> – Pilot implementation support (e.g., energy audit, packaging trial) and performance monitoring.
+            </li>
+            <li>
+              <strong>Recognition</strong> – ‘Sustainability Champion’ status in annual reporting and procurement preference.
+            </li>
+          </ol>
+
+          <div class="mt-6 flex flex-wrap gap-4">
+            <!-- Button using accent color -->
+            <a href="#" class="inline-flex items-center gap-2 px-6 py-3 bg-[color:var(--accent)] text-white font-semibold rounded-lg shadow-md hover:bg-opacity-90 transition duration-150 focus-outline">Sign up for Supplier Webinar</a>
+            <a href="#" class="inline-flex items-center gap-2 px-6 py-3 border border-gray-300 rounded-lg text-gray-700 hover:bg-gray-100 transition duration-150 focus-outline">Download Readiness Template</a>
+          </div>
+        </section>
+      </article>
+
+      <!-- Right column - quick links / resources (Now has a contrasting background) -->
+      <aside class="lg:sticky lg:top-20 h-fit">
+        <!-- Wrapper for contrasting background -->
+        <div class="p-6 rounded-2xl shadow-xl bg-gray-100 space-y-8">
             
-            <!-- Environmental Card -->
-            <div class="bg-[color:var(--primary)]/5 p-5 rounded-xl shadow-md border-t-4 border-[color:var(--accent)] text-center">
-              <!-- Environmental Icon (Tree/Leaf) - UPDATED -->
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-8 h-8 mx-auto mb-2 text-[color:var(--accent)]">
-                <path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z"/>
-                <path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"/>
-              </svg>
-              <h3 class="font-bold text-lg text-[color:var(--primary)]">Environmental</h3>
-              <ul class="mt-3 text-sm text-gray-700 list-disc text-left pl-5 space-y-2">
-                <li>Energy consumption (monthly/annual kWh) and fuel usage (L)</li>
-                <li>Water consumption (m³) and any water recycling initiatives</li>
-                <li>Waste generation volumes and disposal routes</li>
-                <li>Valid environmental permits / licenses</li>
-              </ul>
-            </div>
+            <!-- Reporting & Transparency (Moved here from left column) -->
+            <div id="reporting" class="bg-white p-6 rounded-xl shadow-lg border-l-4 border-[color:var(--primary)]">
+                <h3 class="font-bold text-lg text-[color:var(--primary)]">Reporting & Transparency</h3>
+                <p class="mt-3 text-sm text-gray-600">As we prepare for public listing, Loob will disclose aggregated supplier engagement metrics and progress in our annual Sustainability Report. We will publish key indicators such as percentage of suppliers assessed, share of suppliers with environmental management measures, and case studies showcasing improvements.</p>
+            </div>
 
-            <!-- Social Card -->
-            <div class="bg-[color:var(--primary)]/5 p-5 rounded-xl shadow-md border-t-4 border-[color:var(--accent)] text-center">
-              <!-- Social Icon (Users/Handshake) - UPDATED -->
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-8 h-8 mx-auto mb-2 text-[color:var(--accent)]">
-                <path d="M18 21a8 8 0 0 0-16 0"/>
-                <circle cx="10" cy="8" r="5"/>
-                <path d="M22 20c0-3.37-2-6.5-4-8a5 5 0 0 0-.45-8.3"/>
-              </svg>
-              <h3 class="font-bold text-lg text-[color:var(--primary)]">Social</h3>
-              <ul class="mt-3 text-sm text-gray-700 list-disc text-left pl-5 space-y-2">
-                <li>Workforce size by gender and employment type</li>
-                <li>Wage and overtime policies; sample payslip availability</li>
-                <li>Accident / injury records and remediation actions</li>
-                <li>Number of training hours on safety and ESG topics</li>
-              </ul>
-            </div>
+            <!-- Quick Links -->
+            <div class="bg-white p-6 rounded-xl shadow-lg border-l-4 border-gray-200">
+              <h3 class="font-bold text-lg text-[color:var(--primary)]">Quick Links</h3>
+              <ul class="mt-4 text-sm text-gray-700 space-y-3">
+                <li><a href="/supplier-code-of-conduct" class="text-[color:var(--accent)] hover:text-[color:var(--primary)] underline transition duration-150 focus-outline">Supplier Code of Conduct (PDF)</a></li>
+                <li><a href="#" class="text-[color:var(--accent)] hover:text-[color:var(--primary)] underline transition duration-150 focus-outline">ESG Screening Form</a></li>
+                <li><a href="#" class="text-[color:var(--accent)] hover:text-[color:var(--primary)] underline transition duration-150 focus-outline">Supplier ESG Risk Map</a></li>
+                <li><a href="#readiness" class="text-[color:var(--accent)] hover:text-[color:var(--primary)] underline transition duration-150 focus-outline">Environmental Readiness Survey</a></li>
+              </ul>
+            </div>
 
-            <!-- Governance Card -->
-            <div class="bg-[color:var(--primary)]/5 p-5 rounded-xl shadow-md border-t-4 border-[color:var(--accent)] text-center">
-              <!-- Governance Icon (Shield/Gavel) - UPDATED -->
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-8 h-8 mx-auto mb-2 text-[color:var(--accent)]">
-                <path d="m16 16 3-8 3 8c-.87.65-1.92 1-3 1s-2.13-.35-3-1Z"/>
-                <path d="m2 16 3-8 3 8c-.87.65-1.92 1-3 1s-2.13-.35-3-1Z"/>
-                <path d="M7 21h10"/>
-                <path d="M12 3v18"/>
-                <path d="M3 7h2c2 0 5-1 7-2 2 1 5 2 7 2h2"/>
-              </svg>
-              <h3 class="font-bold text-lg text-[color:var(--primary)]">Governance</h3>
-              <ul class="mt-3 text-sm text-gray-700 list-disc text-left pl-5 space-y-2">
-                <li>Anti-bribery/anti-corruption policy and training records</li>
-                <li>Data protection/privacy policy</li>
-                <li>Company Code of Conduct</li>
-                <li>Grievances and Whistleblowing platform</li>
-              </ul>
-            </div>
-          </div>
-          <!-- End Horizontal Grid -->
+            <!-- Resources & Support -->
+            <div id="resources" class="bg-white p-6 rounded-xl shadow-lg border-l-4 border-gray-200">
+              <h3 class="font-bold text-lg text-[color:var(--primary)]">Resources & Support</h3>
+              <p class="mt-3 text-sm text-gray-600">Key Malaysian and International resources for ESG/Sustainability reporting:</p>
+              <ul class="mt-4 text-sm text-gray-700 space-y-2">
+                <li><a href="https://www.myhijau.my/" target="_blank" class="text-[color:var(--accent)] hover:text-[color:var(--primary)] underline transition duration-150 focus-outline">MyHIJAU Directory</a></li>
+                <li><a href="https://www.mgtc.gov.my/" target="_blank" class="text-[color:var(--accent)] hover:text-[color:var(--primary)] underline transition duration-150 focus-outline">MGTC Climate Change Initiatives</a></li>
+                <li><a href="https://www.sc.com.my/" target="_blank" class="text-[color:var(--accent)] hover:text-[color:var(--primary)] underline transition duration-150 focus-outline">Securities Commission Malaysia (SC)</a></li>
+                <li><a href="https://sedg.capitalmarketsmalaysia.com/" target="_blank" class="text-[color:var(--accent)] hover:text-[color:var(--primary)] underline transition duration-150 focus-outline">Simplified ESG Disclosure Guide (SEDG)</a></li>
+                <li><a href="https://sdgs.un.org/goals" target="_blank" class="text-[color:var(--accent)] hover:text-[color:var(--primary)] underline transition duration-150 focus-outline">UN Sustainable Development Goals (SDGs)</a></li>
+              </ul>
+            </div>
 
-          <p class="mt-6 text-sm text-gray-600">All data will be treated confidentially and used to produce aggregated metrics for disclosure. Smaller suppliers may submit simplified templates; Loob will provide guidance and support to help suppliers collect the necessary data.</p>
-        </section>
+            <!-- Contact & Support -->
+            <div id="contact" class="bg-white p-6 rounded-xl shadow-lg border-l-4 border-[color:var(--primary)]">
+              <h3 class="font-bold text-lg text-[color:var(--primary)]">Contact & Support</h3>
+              <p class="mt-3 text-sm text-gray-700">For help with the toolkit, data templates, or to request tailored support, email our Sustainability team:</p>
+              <div class="mt-4 flex flex-col gap-2">
+                <a href="mailto:sustainability@loob.com.my" class="px-3 py-1 bg-gray-100 rounded-lg text-sm font-medium text-[color:var(--primary)] hover:bg-gray-200 transition duration-150 focus-outline">sustainability@loob.com.my</a>
+                <a href="mailto:whistleblowing@loob.com.my" class="px-3 py-1 bg-gray-100 rounded-lg text-sm font-medium text-[color:var(--primary)] hover:bg-gray-200 transition duration-150 focus-outline">whistleblowing@loob.com.my</a>
+              </div>
+            </div>
 
-        <!-- Readiness and Stewardship -->
-        <section id="readiness" class="bg-white p-8 rounded-xl shadow-lg border-l-4 border-[color:var(--primary)]">
-          <h2 class="text-2xl font-bold text-[color:var(--primary)]">Environmental Readiness & Stewardship Program</h2>
-          <p class="mt-4 text-gray-700">Our staged approach helps suppliers progress from awareness to measurable action.</p>
-
-          <ol class="mt-6 list-decimal list-outside pl-6 space-y-4 text-gray-700">
-            <li>
-              <strong>Readiness Survey (Q2 2026)</strong> – Quick self-report on energy, water, waste and packaging practices.
-            </li>
-            <li>
-              <strong>Targeted Engagement</strong> – Capacity building, workshops and pilot projects for selected suppliers.
-            </li>
-            <li>
-              <strong>Stewardship</strong> – Pilot implementation support (e.g., energy audit, packaging trial) and performance monitoring.
-            </li>
-            <li>
-              <strong>Recognition</strong> – ‘Sustainability Champion’ status in annual reporting and procurement preference.
-            </li>
-          </ol>
-
-          <div class="mt-6 flex flex-wrap gap-4">
-            <!-- Button using accent color -->
-            <a href="#" class="inline-flex items-center gap-2 px-6 py-3 bg-[color:var(--accent)] text-white font-semibold rounded-lg shadow-md hover:bg-opacity-90 transition duration-150">Sign up for Supplier Webinar</a>
-            <a href="#" class="inline-flex items-center gap-2 px-6 py-3 border border-gray-300 rounded-lg text-gray-700 hover:bg-gray-100 transition duration-150">Download Readiness Template</a>
-          </div>
-        </section>
-
-        <!-- Reporting -->
-        <section id="reporting" class="bg-white p-8 rounded-xl shadow-lg border-l-4 border-[color:var(--primary)]">
-          <h2 class="text-2xl font-bold text-[color:var(--primary)]">Reporting & Transparency</h2>
-          <p class="mt-4 text-gray-700">As we prepare for public listing, Loob will disclose aggregated supplier engagement metrics and progress in our annual Sustainability Report. We will publish key indicators such as percentage of suppliers assessed, share of suppliers with environmental management measures, and case studies showcasing improvements.</p>
-        </section>
-
-        <!-- Removed the Contact section from the main column -->
-      </article>
-
-      <!-- Right column - quick links / resources -->
-      <aside class="space-y-8">
-        
-        <!-- Quick Links -->
-        <div class="bg-white p-6 rounded-xl shadow-lg border-t-4 border-gray-200">
-          <h3 class="font-bold text-lg text-[color:var(--primary)]">Quick Links</h3>
-          <ul class="mt-4 text-sm text-gray-700 space-y-3">
-            <li><a href="/supplier-code-of-conduct" class="text-[color:var(--accent)] hover:text-[color:var(--primary)] underline transition duration-150">Supplier Code of Conduct (PDF)</a></li>
-            <li><a href="#" class="text-[color:var(--accent)] hover:text-[color:var(--primary)] underline transition duration-150">ESG Screening Form</a></li>
-            <li><a href="#" class="text-[color:var(--accent)] hover:text-[color:var(--primary)] underline transition duration-150">Supplier ESG Risk Map</a></li>
-            <li><a href="#readiness" class="text-[color:var(--accent)] hover:text-[color:var(--primary)] underline transition duration-150">Environmental Readiness Survey</a></li>
-          </ul>
+            <!-- How We Handle Data -->
+            <div class="bg-white p-6 rounded-xl shadow-lg text-sm border-l-4 border-gray-200">
+              <h3 class="font-bold text-lg text-[color:var(--primary)]">How We Handle Data</h3>
+              <p class="mt-3 text-gray-600">Supplier data is stored securely and used only for aggregated ESG reporting and supplier support. Confidential supplier-level findings are not publicly disclosed without consent.</p>
+            </div>
         </div>
+      </aside>
+    </div>
+  </main>
 
-        <!-- Resources & Support - UPDATED with specific list -->
-        <div id="resources" class="bg-white p-6 rounded-xl shadow-lg border-t-4 border-gray-200">
-          <h3 class="font-bold text-lg text-[color:var(--primary)]">Resources & Support</h3>
-          <p class="mt-3 text-sm text-gray-600">Key Malaysian and International resources for ESG/Sustainability reporting:</p>
-          <ul class="mt-4 text-sm text-gray-700 space-y-2">
-            <li><a href="https://www.myhijau.my/" target="_blank" class="text-[color:var(--accent)] hover:text-[color:var(--primary)] underline transition duration-150">MyHIJAU Directory</a></li>
-            <li><a href="https://www.mgtc.gov.my/" target="_blank" class="text-[color:var(--accent)] hover:text-[color:var(--primary)] underline transition duration-150">MGTC Climate Change Initiatives</a></li>
-            <li><a href="https://www.sc.com.my/" target="_blank" class="text-[color:var(--accent)] hover:text-[color:var(--primary)] underline transition duration-150">Securities Commission Malaysia (SC)</a></li>
-            <li><a href="https://sedg.capitalmarketsmalaysia.com/" target="_blank" class="text-[color:var(--accent)] hover:text-[color:var(--primary)] underline transition duration-150">Simplified ESG Disclosure Guide (SEDG)</a></li>
-            <li><a href="https://sdgs.un.org/goals" target="_blank" class="text-[color:var(--accent)] hover:text-[color:var(--primary)] underline transition duration-150">UN Sustainable Development Goals (SDGs)</a></li>
-          </ul>
-        </div>
+  <!-- Footer -->
+  <footer class="bg-white border-t mt-16">
+    <div class="max-w-7xl mx-auto px-4 py-8 flex flex-col md:flex-row items-center justify-between text-sm text-gray-500">
+      <div>© <span id="year"></span> Loob Holding Sdn Bhd. All rights reserved.</div>
+      <div class="mt-3 md:mt-0">Designed for suppliers • Prepared for public disclosure readiness</div>
+    </div>
+  </footer>
 
-        <!-- Contact & Support (Moved to Sidebar) -->
-        <div id="contact" class="bg-white p-6 rounded-xl shadow-lg border-t-4 border-[color:var(--primary)]">
-          <h3 class="font-bold text-lg text-[color:var(--primary)]">Contact & Support</h3>
-          <p class="mt-3 text-sm text-gray-700">For help with the toolkit, data templates, or to request tailored support, email our Sustainability team:</p>
-          <div class="mt-4 flex flex-col gap-2">
-            <a href="mailto:sustainability@loob.com.my" class="px-3 py-1 bg-gray-100 rounded-lg text-sm font-medium text-[color:var(--primary)] hover:bg-gray-200 transition duration-150">sustainability@loob.com.my</a>
-            <a href="mailto:whistleblowing@loob.com.my" class="px-3 py-1 bg-gray-100 rounded-lg text-sm font-medium text-[color:var(--primary)] hover:bg-gray-200 transition duration-150">whistleblowing@loob.com.my</a>
-          </div>
-        </div>
+  <script>
+    // Handles the mobile menu click (simple placeholder)
+    const btn = document.getElementById('mobileMenuBtn');
+    btn.addEventListener('click', ()=>{
+      const expanded = btn.getAttribute('aria-expanded') === 'true';
+      btn.setAttribute('aria-expanded', String(!expanded));
+      console.log('Mobile menu placeholder clicked — implement your mobile nav here.');
+    });
 
-        <!-- How We Handle Data -->
-        <div class="bg-white p-6 rounded-xl shadow-lg text-sm border-t-4 border-gray-200">
-          <h3 class="font-bold text-lg text-[color:var(--primary)]">How We Handle Data</h3>
-          <p class="mt-3 text-gray-600">Supplier data is stored securely and used only for aggregated ESG reporting and supplier support. Confidential supplier-level findings are not publicly disclosed without consent.</p>
-        </div>
-      </aside>
-    </div>
-  </main>
-
-  <!-- Footer -->
-  <footer class="bg-white border-t mt-16">
-    <div class="max-w-7xl mx-auto px-4 py-8 flex flex-col md:flex-row items-center justify-between text-sm text-gray-500">
-      <div>© <span id="year"></span> Loob Holding Sdn Bhd. All rights reserved.</div>
-      <div class="mt-3 md:mt-0">Designed for suppliers • Prepared for public disclosure readiness</div>
-    </div>
-  </footer>
-
-  <script>
-    // Handles the mobile menu click (simple placeholder)
-    const btn = document.getElementById('mobileMenuBtn');
-    btn.addEventListener('click', ()=>{
-      const expanded = btn.getAttribute('aria-expanded') === 'true';
-      btn.setAttribute('aria-expanded', String(!expanded));
-      console.log('Mobile menu placeholder clicked — implement your mobile nav here.');
-    });
-
-    // Sets the current year in the footer
-    document.getElementById('year').textContent = new Date().getFullYear();
-  </script>
+    // Sets the current year in the footer
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
-
-
-
-
-

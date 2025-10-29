@@ -34,8 +34,7 @@
 <!-- Apply Roboto font globally -->
 <body class="bg-gray-50 text-gray-800 antialiased font-roboto">
   
-  <!-- Header / Navigation Bar -->
-  <!-- CHANGED: Background to Dark Blue corporate color -->
+  <!-- Header / Navigation Bar (Kept w-16 h-16 and text-2xl from previous request) -->
   <header class="bg-[color:var(--primary)] sticky top-0 z-10">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="flex items-center justify-between h-16">
@@ -44,10 +43,9 @@
           <img 
             src="./Loob Holding Logo.png" 
             alt="Loob Holding Logo" 
-            class="w-12 h-12 rounded-md object-contain"
+            class="w-16 h-16 rounded-md object-contain"
             onerror="this.onerror=null; this.src='https://placehold.co/64x64/224169/ffffff?text=Logo';"
           >
-          <!-- CHANGED: Text colors to white/light gray for contrast and text size to text-2xl -->
           <div>
             <a href="#" class="text-2xl font-semibold text-white">Loob Holding Sdn Bhd</a>
             <div class="text-xs text-gray-200">Supplier Sustainability Toolkit</div>
@@ -55,20 +53,17 @@
         </div>
         
         <!-- Desktop Nav Links -->
-        <!-- CHANGED: Text color to white for visibility -->
         <nav class="hidden md:flex items-center gap-6 text-sm text-white">
           <a href="#introduction" class="hover:text-[color:var(--accent)] transition duration-150 focus-outline">Introduction</a>
           <a href="#expectations" class="hover:text-[color:var(--accent)] transition duration-150 focus-outline">Expectations</a>
           <a href="#data" class="hover:text-[color:var(--accent)] transition duration-150 focus-outline">Required Data</a>
           <a href="#readiness" class="hover:text-[color:var(--accent)] transition duration-150 focus-outline">Readiness</a>
           <a href="#resources" class="hover:text-[color:var(--accent)] transition duration-150 focus-outline">Resources</a>
-          <!-- CHANGED: Contact button styling for visibility on dark header -->
           <a href="#contact" class="text-sm px-4 py-2 border border-gray-300 rounded-md bg-white text-[color:var(--primary)] hover:bg-gray-200 transition duration-150">Contact</a>
         </nav>
         
         <!-- Mobile Menu Button -->
         <div class="md:hidden">
-          <!-- CHANGED: Added text-white to make the SVG icon visible -->
           <button id="mobileMenuBtn" aria-expanded="false" class="p-2 rounded-md focus-outline text-white">
             <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/></svg>
           </button>
@@ -155,13 +150,15 @@
           <h2 class="text-2xl font-bold text-[color:var(--primary)]">ESG Data We Require (NSRF & Listing Readiness)</h2>
           <p class="mt-4 text-gray-700">We will collect supplier-level ESG data to support NSRF alignment and our public disclosures. The data request will be phased and proportionate to the supplier's size and risk profile.</p>
 
-          <!-- Horizontal Grid for Data Categories -->
+          <!-- Horizontal Grid for Data Categories - UPDATED with Icons and Centering -->
           <div class="mt-6 grid grid-cols-1 md:grid-cols-3 gap-6">
             
             <!-- Environmental Card -->
-            <div class="bg-[color:var(--primary)]/5 p-5 rounded-xl shadow-md border-t-4 border-[color:var(--accent)]">
+            <div class="bg-[color:var(--primary)]/5 p-5 rounded-xl shadow-md border-t-4 border-[color:var(--accent)] text-center">
+              <!-- Environmental Icon (Tree/Leaf) -->
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-8 h-8 mx-auto mb-2 text-[color:var(--accent)]"><path d="M12 2v20M17 6.5A5.5 5.5 0 0 0 12 1h0A5.5 5.5 0 0 0 7 6.5C7 8.5 9 13 12 13s5-4.5 5-6.5z"/><path d="M12 13v10"/></svg>
               <h3 class="font-bold text-lg text-[color:var(--primary)]">Environmental</h3>
-              <ul class="mt-3 text-sm text-gray-700 list-disc pl-5 space-y-2">
+              <ul class="mt-3 text-sm text-gray-700 list-disc text-left pl-5 space-y-2">
                 <li>Energy consumption (monthly/annual kWh) and fuel usage (L)</li>
                 <li>Water consumption (m³) and any water recycling initiatives</li>
                 <li>Waste generation volumes and disposal routes</li>
@@ -170,9 +167,11 @@
             </div>
 
             <!-- Social Card -->
-            <div class="bg-[color:var(--primary)]/5 p-5 rounded-xl shadow-md border-t-4 border-[color:var(--accent)]">
+            <div class="bg-[color:var(--primary)]/5 p-5 rounded-xl shadow-md border-t-4 border-[color:var(--accent)] text-center">
+              <!-- Social Icon (Users/Handshake) -->
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-8 h-8 mx-auto mb-2 text-[color:var(--accent)]"><path d="M17 19h2c.6 0 1-.4 1-1v-4c0-.6-.4-1-1-1h-2"/><path d="M17 19h-2c-.6 0-1-.4-1-1v-4c0-.6.4-1 1-1h2"/><path d="M10 13a5 5 0 0 0-5 5v1h10v-1a5 5 0 0 0-5-5z"/><circle cx="10" cy="8" r="3"/></svg>
               <h3 class="font-bold text-lg text-[color:var(--primary)]">Social</h3>
-              <ul class="mt-3 text-sm text-gray-700 list-disc pl-5 space-y-2">
+              <ul class="mt-3 text-sm text-gray-700 list-disc text-left pl-5 space-y-2">
                 <li>Workforce size by gender and employment type</li>
                 <li>Wage and overtime policies; sample payslip availability</li>
                 <li>Accident / injury records and remediation actions</li>
@@ -181,9 +180,11 @@
             </div>
 
             <!-- Governance Card -->
-            <div class="bg-[color:var(--primary)]/5 p-5 rounded-xl shadow-md border-t-4 border-[color:var(--accent)]">
+            <div class="bg-[color:var(--primary)]/5 p-5 rounded-xl shadow-md border-t-4 border-[color:var(--accent)] text-center">
+              <!-- Governance Icon (Shield/Gavel) -->
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-8 h-8 mx-auto mb-2 text-[color:var(--accent)]"><rect x="3" y="11" width="18" height="10" rx="2" ry="2"/><path d="M12 2v4"/><path d="M12 21v2"/><path d="M12 11V6"/><path d="M15 15h2"/><path d="M7 15h2"/><path d="M11 15h2"/></svg>
               <h3 class="font-bold text-lg text-[color:var(--primary)]">Governance</h3>
-              <ul class="mt-3 text-sm text-gray-700 list-disc pl-5 space-y-2">
+              <ul class="mt-3 text-sm text-gray-700 list-disc text-left pl-5 space-y-2">
                 <li>Anti-bribery/anti-corruption policy and training records</li>
                 <li>Data protection/privacy policy</li>
                 <li>Company Code of Conduct</li>
@@ -229,18 +230,7 @@
           <p class="mt-4 text-gray-700">As we prepare for public listing, Loob will disclose aggregated supplier engagement metrics and progress in our annual Sustainability Report. We will publish key indicators such as percentage of suppliers assessed, share of suppliers with environmental management measures, and case studies showcasing improvements.</p>
         </section>
 
-        <!-- Contact -->
-        <section id="contact" class="bg-white p-8 rounded-xl shadow-lg border-l-4 border-[color:var(--primary)]">
-          <h2 class="text-2xl font-bold text-[color:var(--primary)]">Contact & Support</h2>
-          <p class="mt-4 text-gray-700">For help with the toolkit, data templates, or to request tailored support, email our Sustainability team:</p>
-          <div class="mt-5 flex flex-col sm:flex-row gap-3">
-            <a href="mailto:sustainability@loob.com.my" class="px-4 py-2 bg-gray-100 rounded-lg text-sm font-medium text-[color:var(--primary)] hover:bg-gray-200 transition duration-150">sustainability@loob.com.my</a>
-            <a href="mailto:whistleblowing@loob.com.my" class="px-4 py-2 bg-gray-100 rounded-lg text-sm font-medium text-[color:var(--primary)] hover:bg-gray-200 transition duration-150">whistleblowing@loob.com.my</a>
-          </div>
-
-          <p class="mt-5 text-sm text-gray-500 border-t border-gray-100 pt-4">If you require assistance collecting data, please indicate your needs when contacting the Sustainability team and we will connect you with local support partners.</p>
-        </section>
-
+        <!-- Removed the Contact section from the main column -->
       </article>
 
       <!-- Right column - quick links / resources -->
@@ -257,11 +247,27 @@
           </ul>
         </div>
 
-        <!-- Resources & Support -->
+        <!-- Resources & Support - UPDATED with specific list -->
         <div id="resources" class="bg-white p-6 rounded-xl shadow-lg border-t-4 border-gray-200">
           <h3 class="font-bold text-lg text-[color:var(--primary)]">Resources & Support</h3>
-          <p class="mt-3 text-sm text-gray-600">Links to national programmes and partner support (SME Corp, MITI, MyHIJAU) will be available here.</p>
-          <a href="#" class="mt-4 inline-block text-sm font-semibold underline text-[color:var(--accent)] hover:text-[color:var(--primary)] transition duration-150">View partner resources</a>
+          <p class="mt-3 text-sm text-gray-600">Key Malaysian and International resources for ESG/Sustainability reporting:</p>
+          <ul class="mt-4 text-sm text-gray-700 space-y-2">
+            <li><a href="#" class="text-[color:var(--accent)] hover:text-[color:var(--primary)] underline transition duration-150">MyHIJAU Directory</a></li>
+            <li><a href="#" class="text-[color:var(--accent)] hover:text-[color:var(--primary)] underline transition duration-150">MGTC Climate Change Initiatives</a></li>
+            <li><a href="#" class="text-[color:var(--accent)] hover:text-[color:var(--primary)] underline transition duration-150">Securities Commission Malaysia (SC)</a></li>
+            <li><a href="#" class="text-[color:var(--accent)] hover:text-[color:var(--primary)] underline transition duration-150">SEDG CMM (Supply Chain Management Module)</a></li>
+            <li><a href="#" class="text-[color:var(--accent)] hover:text-[color:var(--primary)] underline transition duration-150">UN Sustainable Development Goals (SDGs)</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact & Support (Moved to Sidebar) -->
+        <div id="contact" class="bg-white p-6 rounded-xl shadow-lg border-t-4 border-[color:var(--primary)]">
+          <h3 class="font-bold text-lg text-[color:var(--primary)]">Contact & Support</h3>
+          <p class="mt-3 text-sm text-gray-700">For help with the toolkit, data templates, or to request tailored support, email our Sustainability team:</p>
+          <div class="mt-4 flex flex-col gap-2">
+            <a href="mailto:sustainability@loob.com.my" class="px-3 py-1 bg-gray-100 rounded-lg text-sm font-medium text-[color:var(--primary)] hover:bg-gray-200 transition duration-150">sustainability@loob.com.my</a>
+            <a href="mailto:whistleblowing@loob.com.my" class="px-3 py-1 bg-gray-100 rounded-lg text-sm font-medium text-[color:var(--primary)] hover:bg-gray-200 transition duration-150">whistleblowing@loob.com.my</a>
+          </div>
         </div>
 
         <!-- How We Handle Data -->
@@ -288,7 +294,6 @@
       const expanded = btn.getAttribute('aria-expanded') === 'true';
       btn.setAttribute('aria-expanded', String(!expanded));
       console.log('Mobile menu placeholder clicked — implement your mobile nav here.');
-      // Using a simple console message instead of alert()
     });
 
     // Sets the current year in the footer
@@ -296,7 +301,3 @@
   </script>
 </body>
 </html>
-
-
-
-

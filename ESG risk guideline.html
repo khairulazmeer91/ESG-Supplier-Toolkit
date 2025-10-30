@@ -23,7 +23,7 @@
 <body class="bg-gray-50 text-gray-800 antialiased font-roboto">
 
     <!-- Header (Using inline style for guaranteed background color) -->
-    <header class="sticky top-0 z-10 bg-white shadow-md">
+    <header class="bg-[color:var(--primary)] sticky top-0 z-10">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <!-- The 'justify-start' class ensures no extra space on the right, as there is no navigation -->
           <div class="flex items-center justify-start h-16">
@@ -32,7 +32,7 @@
                 onerror="this.onerror=null; this.src='https://placehold.co/64x64/224169/ffffff?text=Logo';">
               <div>
                 <a href="index.html" class="text-2xl font-semibold text-black">Loob Holding Sdn Bhd</a>
-                <div class="text-xs text-gray-200">Supplier Sustainability Toolkit</div>
+                <div class="text-xs text-gray-600">Supplier Sustainability Toolkit</div>
               </div>
             </div>
 		
@@ -135,7 +135,7 @@
                     </p>
                     <div class="mt-3 bg-gray-100 border border-gray-200 p-6 rounded-xl shadow-inner">
                         <p class="font-mono text-lg md:text-xl text-gray-800 break-words">
-                            <strong>ESG Risk Score</strong> = (Product/Service score &times; w<sub>1</sub>) + (Sales score&times; w<sub>2</sub>) + (Environmental score &times; w<sub>3</sub>) + (Social score &times; w<sub>4</sub>) + (Governance score &times; w<sub>5</sub>)
+                            <strong>ESG Risk Score</strong> = (Product/Service score &times; w<sub>1</sub>) + (Sales score &times; w<sub>2</sub>) + (Environmental score &times; w<sub>3</sub>) + (Social score &times; w<sub>4</sub>) + (Governance score &times; w<sub>5</sub>)
                         </p>
                         <p class="mt-4 text-sm text-gray-600 italic">
                             where w₁–w₅ represent the internal weightage assigned to each component. Each “w” value is determined by Loob Holding based on materiality and internal risk prioritisation.
@@ -154,7 +154,6 @@
                             <thead class="bg-gray-200 text-gray-700">
                                 <tr>
                                     <th class="px-4 py-3 text-left font-medium rounded-tl-lg">Product/Service Category</th>
-                                    <th class="px-4 py-3 text-left font-medium w-1/6">Risk</th>
                                     <th class="px-4 py-3 text-left font-medium w-1/12">Score</th>
                                     <th class="px-4 py-3 text-left font-medium rounded-tr-lg">Risk Justification</th>
                                 </tr>
@@ -162,31 +161,26 @@
                             <tbody class="divide-y divide-gray-100">
                                 <tr class="bg-white hover:bg-red-50/50">
                                     <td class="px-4 py-3 font-medium">Food & Beverage Ingredients</td>
-                                    <td class="px-4 py-3 text-red-600">High</td>
                                     <td class="px-4 py-3 font-semibold">1</td>
                                     <td class="px-4 py-3 text-gray-700">High ESG exposure due to raw material sourcing, food safety, traceability, and environmental impact (e.g., agriculture, livestock).</td>
                                 </tr>
                                 <tr class="bg-white hover:bg-yellow-50/50">
                                     <td class="px-4 py-3 font-medium">Packaging</td>
-                                    <td class="px-4 py-3 text-yellow-600">Moderate</td>
                                     <td class="px-4 py-3 font-semibold">2</td>
                                     <td class="px-4 py-3 text-gray-700">Medium ESG impact linked to material use, recyclability, and waste management.</td>
                                 </tr>
                                 <tr class="bg-white hover:bg-yellow-50/50">
                                     <td class="px-4 py-3 font-medium">Logistics & Supply Chain Services</td>
-                                    <td class="px-4 py-3 text-yellow-600">Moderate</td>
                                     <td class="px-4 py-3 font-semibold">2</td>
                                     <td class="px-4 py-3 text-gray-700">Moderate ESG exposure such as transport emissions and driver working conditions.</td>
                                 </tr>
                                 <tr class="bg-white hover:bg-green-50/50">
                                     <td class="px-4 py-3 font-medium">Equipment & Machinery</td>
-                                    <td class="px-4 py-3 text-green-600">Low</td>
                                     <td class="px-4 py-3 font-semibold">3</td>
                                     <td class="px-4 py-3 text-gray-700">Limited ESG footprint during use; risks mainly arise in upstream manufacturing.</td>
                                 </tr>
                                 <tr class="bg-white hover:bg-green-50/50">
                                     <td class="px-4 py-3 font-medium">Services</td>
-                                    <td class="px-4 py-3 text-green-600">Low</td>
                                     <td class="px-4 py-3 font-semibold">3</td>
                                     <td class="px-4 py-3 text-gray-700">Minimal ESG exposure; typically office-based or professional services.</td>
                                 </tr>
@@ -201,35 +195,35 @@
                         <table class="min-w-full text-sm">
                             <thead class="bg-gray-200 text-gray-700">
                                 <tr>
+									<th class="px-4 py-3 text-left font-medium">Supplier Label</th>
                                     <th class="px-4 py-3 text-left font-medium rounded-tl-lg">Annual Sales Range (RM)</th>
-                                    <th class="px-4 py-3 text-left font-medium">Label</th>
                                     <th class="px-4 py-3 text-left font-medium rounded-tr-lg w-1/12">Score</th>
                                 </tr>
                             </thead>
                             <tbody class="divide-y divide-gray-100">
                                 <tr class="bg-white hover:bg-red-50/50">
-                                    <td class="px-4 py-3 font-medium">Above 10 million</td>
                                     <td class="px-4 py-3 text-gray-700">Strategic / High Value</td>
+									<td class="px-4 py-3 font-medium">Above 10 million</td>
                                     <td class="px-4 py-3 font-semibold text-red-600">1</td>
                                 </tr>
                                 <tr class="bg-white hover:bg-red-50/50">
-                                    <td class="px-4 py-3 font-medium">7 – 10 million</td>
                                     <td class="px-4 py-3 text-gray-700">Key Partner</td>
+									<td class="px-4 py-3 font-medium">7 – 10 million</td>
                                     <td class="px-4 py-3 font-semibold text-red-600">1</td>
                                 </tr>
                                 <tr class="bg-white hover:bg-yellow-50/50">
+									<td class="px-4 py-3 text-gray-700">Core Supplier</td>
                                     <td class="px-4 py-3 font-medium">5 – 7 million</td>
-                                    <td class="px-4 py-3 text-gray-700">Core Supplier</td>
                                     <td class="px-4 py-3 font-semibold text-yellow-600">2</td>
                                 </tr>
                                 <tr class="bg-white hover:bg-yellow-50/50">
-                                    <td class="px-4 py-3 font-medium">3 – 5 million</td>
                                     <td class="px-4 py-3 text-gray-700">Mid-Tier Supplier</td>
+									<td class="px-4 py-3 font-medium">3 – 5 million</td>
                                     <td class="px-4 py-3 font-semibold text-yellow-600">2</td>
                                 </tr>
                                 <tr class="bg-white hover:bg-green-50/50">
-                                    <td class="px-4 py-3 font-medium">Below 3 million</td>
                                     <td class="px-4 py-3 text-gray-700">Low-Volume Supplier</td>
+									<td class="px-4 py-3 font-medium">Below 3 million</td>
                                     <td class="px-4 py-3 font-semibold text-green-600">3</td>
                                 </tr>
                             </tbody>
@@ -276,11 +270,10 @@
 						<table class="min-w-full text-sm">
 							<thead class="bg-gray-200 text-gray-700">
 								<tr>
-									<!-- Adjusted widths: Category (15%) and Score (10%) are smaller, Description (35%) and Action (40%) are larger -->
 									<th class="px-4 py-3 text-left font-medium rounded-tl-lg w-[15%]">ESG Risk Category</th>
-									<th class="px-4 py-3 text-left font-medium w-[10%]">ESG Risk Score</th>
+									<th class="px-4 py-3 text-left font-medium w-[15%]">Score</th>
 									<th class="px-4 py-3 text-left font-medium w-[35%]">Description</th>
-									<th class="px-4 py-3 text-left font-medium rounded-tr-lg w-[40%]">Recommended Action</th>
+									<th class="px-4 py-3 text-left font-medium rounded-tr-lg w-[45%]">Recommended Action</th>
 								</tr>
 							</thead>
 							<tbody class="divide-y divide-gray-100">
@@ -346,5 +339,6 @@
     </main>
 </body>
 </html>
+
 
 

@@ -1,50 +1,50 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Supplier Sustainability Toolkit | Loob Holding Sdn Bhd</title>
-  <meta name="description" content="The Supplier Sustainability Toolkit helps our suppliers understand ESG expectations, align with the National Sustainability Reporting Framework (NSRF), and strengthen collective readiness for transparent sustainability reporting." />
-  
-  <!-- Load Tailwind CSS -->
-  <script src="https://cdn.tailwindcss.com"></script>
-  
-  <!-- Load Roboto Font -->
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
-
-  <style>
-    :root { 
-      --primary: #224169;
-      --accent: #EC4A25;
-    }
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ESG Supplier Risk Guideline | Loob Holding Sdn Bhd</title>
+  <!-- Load Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Load Roboto Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+  <style>
+    :root { 
+      --primary: #224169; /* Deep Blue/Grey */
+      --accent: #EC4A25; /* Vibrant Orange */
+    }
     .focus-outline:focus { 
-      outline: 3px solid rgba(34, 65, 105, 0.25);
-      outline-offset: 3px; 
+        outline: 3px solid rgba(34, 65, 105, 0.25);
+        outline-offset: 3px; 
     }
-    .font-roboto { font-family: 'Roboto', sans-serif; }
-  </style>
+    .font-roboto { font-family: 'Roboto', sans-serif; }
+  </style>
 </head>
-
 <body class="bg-gray-50 text-gray-800 antialiased font-roboto">
-  
-  <!-- Header -->
-  <header class="bg-[color:var(--primary)] sticky top-0 z-10">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="flex items-center justify-between h-16">
-        <div class="flex items-center gap-4">
-          <img src="./Loob Holding Logo.png" alt="Loob Holding Logo" class="w-16 h-16 rounded-md object-contain"
-            onerror="this.onerror=null; this.src='https://placehold.co/64x64/224169/ffffff?text=Logo';">
-          <div>
-            <a href="#" class="text-2xl font-semibold text-white">Loob Holding Sdn Bhd</a>
-            <div class="text-xs text-gray-200">Supplier Sustainability Toolkit</div>
+
+    <!-- Header (Using inline style for guaranteed background color) -->
+    <header class="sticky top-0 z-10" style="background-color: var(--primary);">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <!-- The 'justify-start' class ensures no extra space on the right, as there is no navigation -->
+          <div class="flex items-center justify-start h-16">
+            <div class="flex items-center gap-4">
+              <img src="./Loob Holding Logo.png" alt="Loob Holding Logo" class="w-16 h-16 rounded-md object-contain"
+                onerror="this.onerror=null; this.src='https://placehold.co/64x64/224169/ffffff?text=Logo';">
+              <div>
+                <a href="index.html" class="text-2xl font-semibold text-white">Loob Holding Sdn Bhd</a>
+                <div class="text-xs text-gray-200">Supplier Sustainability Toolkit</div>
+              </div>
+            </div>
           </div>
         </div>
+    </header>
+    <!-- Header is now properly closed here -->
 
     <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <!-- Main content card -->
         <div class="bg-white rounded-3xl shadow-xl p-8 border-t-4 border-[color:var(--accent)]">
             <a href="index.html" class="text-sm text-[color:var(--primary)] hover:underline mb-4 inline-block">&larr; Back to Toolkit Home</a>
-            <h1 class="text-3xl md:text-4xl font-bold text-gray-900 leading-tight mt-2">ESG Supplier Risk Assessment Guideline</h1>
+            <h1 class="text-3xl md:text-4xl font-extrabold text-gray-900 leading-tight mt-2">ESG Supplier Risk Assessment Guideline</h1>
             <p class="mt-4 text-lg text-gray-600 border-b pb-6">
                 Loob Holding conducts ESG supplier risk assessments to ensure responsible and sustainable business partnerships. The assessment helps us understand potential environmental, social, and governance (ESG) risks across our supply chain, enabling more transparent and resilient supplier relationships.
             </p>
@@ -118,7 +118,7 @@
                     <h2 class="text-2xl font-bold text-[color:var(--primary)]">4. Risk Classification</h2>
                     <div class="mt-3 overflow-x-auto rounded-lg shadow-lg border border-gray-200">
                         <table class="min-w-full text-sm">
-                            <thead class="bg-[color:var(--primary)] text-white">
+                            <thead class="bg-[var(--primary)] text-white">
                                 <tr>
                                     <th class="px-4 py-3 text-left font-medium rounded-tl-lg">Level</th>
                                     <th class="px-4 py-3 text-left font-medium">Risk Category</th>
@@ -160,5 +160,3 @@
     </main>
 </body>
 </html>
-
-

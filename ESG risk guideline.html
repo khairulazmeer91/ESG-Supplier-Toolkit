@@ -10,12 +10,12 @@
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
   <style>
     :root { 
-      --primary: #224169; /* Deep Blue/Grey */
-      --accent: #EC4A25; /* Vibrant Orange */
+      --primary: #224169; /* Dark Blue */
+      --accent: #EC4A25;  /* Orange-Red */
     }
     .focus-outline:focus { 
-        outline: 3px solid rgba(34, 65, 105, 0.25);
-        outline-offset: 3px; 
+      outline: 3px solid rgba(34, 65, 105, 0.25); /* Uses the primary color for focus */
+      outline-offset: 3px; 
     }
     .font-roboto { font-family: 'Roboto', sans-serif; }
   </style>
@@ -46,9 +46,9 @@
             <h1 class="text-3xl md:text-4xl font-extrabold text-gray-900 leading-tight mt-2">Supplier ESG Risk Assessment Guideline</h1>
             
             <!-- NEW INTRODUCTION SECTION -->
-            <p class="mt-4 text-lg text-gray-600 border-b pb-6">
+            <p class="mt-3 text-lg text-gray-600 border-b pb-6">
                 Loob Holding is committed to responsible and sustainable sourcing practices. Our Supplier ESG Risk Assessment evaluates suppliers’ environmental, social, and governance (ESG) performance to ensure alignment with our sustainability standards and to identify areas for improvement.
-                The assessment enables Loob to: Identify potential ESG-related risks in our supply chain, support suppliers in improving their ESG maturity, and strengthen long-term, responsible partnerships.
+                The assessment enables Loob to identify potential ESG-related risks in our supply chain, support suppliers in improving their ESG maturity, and strengthen long-term, responsible partnerships.
             </p>
 
             <div class="mt-8 space-y-10">
@@ -161,27 +161,27 @@
                             <tbody class="divide-y divide-gray-100">
                                 <tr class="bg-white hover:bg-red-50/50">
                                     <td class="px-4 py-3 font-medium">Food & Beverage Ingredients</td>
-                                    <td class="px-4 py-3 font-semibold">1</td>
+                                    <td class="px-4 py-3 font-semibold text-red-600">1</td>
                                     <td class="px-4 py-3 text-gray-700">High ESG exposure due to raw material sourcing, food safety, traceability, and environmental impact (e.g., agriculture, livestock).</td>
                                 </tr>
                                 <tr class="bg-white hover:bg-yellow-50/50">
                                     <td class="px-4 py-3 font-medium">Packaging</td>
-                                    <td class="px-4 py-3 font-semibold">2</td>
+                                    <td class="px-4 py-3 font-semibold text-yellow-600">2</td>
                                     <td class="px-4 py-3 text-gray-700">Medium ESG impact linked to material use, recyclability, and waste management.</td>
                                 </tr>
                                 <tr class="bg-white hover:bg-yellow-50/50">
                                     <td class="px-4 py-3 font-medium">Logistics & Supply Chain Services</td>
-                                    <td class="px-4 py-3 font-semibold">2</td>
+                                    <td class="px-4 py-3 font-semibold text-yellow-600">2</td>
                                     <td class="px-4 py-3 text-gray-700">Moderate ESG exposure such as transport emissions and driver working conditions.</td>
                                 </tr>
                                 <tr class="bg-white hover:bg-green-50/50">
                                     <td class="px-4 py-3 font-medium">Equipment & Machinery</td>
-                                    <td class="px-4 py-3 font-semibold">3</td>
+                                    <td class="px-4 py-3 font-semibold text-green-600">3</td>
                                     <td class="px-4 py-3 text-gray-700">Limited ESG footprint during use; risks mainly arise in upstream manufacturing.</td>
                                 </tr>
                                 <tr class="bg-white hover:bg-green-50/50">
                                     <td class="px-4 py-3 font-medium">Services</td>
-                                    <td class="px-4 py-3 font-semibold">3</td>
+                                    <td class="px-4 py-3 font-semibold text-green-600">3</td>
                                     <td class="px-4 py-3 text-gray-700">Minimal ESG exposure; typically office-based or professional services.</td>
                                 </tr>
                             </tbody>
@@ -195,9 +195,9 @@
                         <table class="min-w-full text-sm">
                             <thead class="bg-gray-200 text-gray-700">
                                 <tr>
-									<th class="px-4 py-3 text-left font-medium">Supplier Label</th>
-                                    <th class="px-4 py-3 text-left font-medium rounded-tl-lg">Annual Sales Range (RM)</th>
-                                    <th class="px-4 py-3 text-left font-medium rounded-tr-lg w-1/12">Score</th>
+									<th class="px-4 py-3 text-left font-medium rounded-tl-lg w-[33%]">Supplier Label</th>
+                                    <th class="px-4 py-3 text-left font-medium w-[33%]">Annual Sales Range (RM)</th>
+                                    <th class="px-4 py-3 text-left font-medium rounded-tr-lg w-[33%]">Score</th>
                                 </tr>
                             </thead>
                             <tbody class="divide-y divide-gray-100">
@@ -339,6 +339,7 @@
     </main>
 </body>
 </html>
+
 
 
 

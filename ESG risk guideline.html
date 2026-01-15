@@ -1,353 +1,250 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>ESG Supplier Risk Guideline | Loob Holding Sdn Bhd</title>
-  <!-- Load Tailwind CSS -->
-  <script src="https://cdn.tailwindcss.com"></script>
-  <!-- Load Roboto Font -->
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
-  <style>
-  html, body {
-	margin: 0;
-	padding: 0;
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ESG Supplier Risk Guideline | Loob Holding Sdn Bhd</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+  <style>
+    :root { 
+      --primary: #224169; 
+      --accent: #EC4A25;  
     }
-    :root { 
-      --primary: #224169; /* Dark Blue */
-      --accent: #EC4A25;  /* Orange-Red */
-    }
-    .focus-outline:focus { 
-      outline: 3px solid rgba(34, 65, 105, 0.25); /* Uses the primary color for focus */
-      outline-offset: 3px; 
-    }
-    .font-roboto { font-family: 'Roboto', sans-serif; }
-  </style>
+    body { font-family: 'Roboto', sans-serif; }
+    .glass-effect { background: rgba(255, 255, 255, 0.9); backdrop-filter: blur(8px); }
+    .section-card { transition: all 0.3s ease; }
+    .nav-link:hover { color: var(--accent); padding-left: 8px; }
+  </style>
 </head>
-<body class="bg-gray-50 text-gray-800 antialiased font-roboto">
+<body class="bg-slate-50 text-slate-800 antialiased">
 
-    <!-- Header (Using inline style for guaranteed background color) -->
-    <header class="bg-white shadow-lg sticky top-0 z-10">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <!-- The 'justify-start' class ensures no extra space on the right, as there is no navigation -->
-          <div class="flex items-center justify-start h-16">
-            <div class="flex items-center gap-4">
-              <img src="./Loob Holding Logo.png" alt="Loob Holding Logo" class="w-16 h-16 rounded-md object-contain"
-                onerror="this.onerror=null; this.src='https://placehold.co/64x64/224169/ffffff?text=Logo';">
-              <div>
-                <a href="index.html" class="text-2xl font-semibold text-black">Loob Holding Sdn Bhd</a>
-                <div class="text-xs text-gray-600">Supplier Sustainability Toolkit</div>
+  <header class="bg-white border-b border-slate-200 sticky top-0 z-50 glass-effect">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-20">
+        <div class="flex items-center gap-4">
+          <img src="./Loob Holding Logo.png" alt="Logo" class="w-12 h-12 object-contain" 
+               onerror="this.src='https://placehold.co/64x64/224169/ffffff?text=L';">
+          <div>
+            <h1 class="text-xl font-bold tracking-tight text-[color:var(--primary)] uppercase">Loob Holding</h1>
+            <p class="text-xs font-medium text-slate-500 tracking-widest uppercase">Supplier Sustainability</p>
+          </div>
+        </div>
+        <a href="index.html" class="hidden md:flex items-center gap-2 px-4 py-2 text-sm font-semibold text-white bg-[color:var(--primary)] rounded-full hover:bg-slate-700 transition">
+          &larr; Back to Toolkit
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
+    <div class="flex flex-col lg:flex-row gap-12">
+      
+      <aside class="hidden lg:block w-64 flex-shrink-0">
+        <div class="sticky top-32 space-y-4">
+          <p class="text-xs font-bold text-slate-400 uppercase tracking-widest">On this page</p>
+          <nav class="flex flex-col gap-3 text-sm font-medium text-slate-600">
+            <a href="#intro" class="nav-link transition-all">1. Introduction</a>
+            <a href="#overview" class="nav-link transition-all">2. Process Overview</a>
+            <a href="#methodology" class="nav-link transition-all">3. Scoring Methodology</a>
+            <a href="#matrix" class="nav-link transition-all">4. Scoring Matrix</a>
+            <a href="#categorisation" class="nav-link transition-all">5. Risk Action</a>
+            <a href="#handling" class="nav-link transition-all">6. Data Handling</a>
+            <a href="#improvement" class="nav-link transition-all">7. Improvement</a>
+            <a href="#contact" class="nav-link transition-all">8. Contact</a>
+          </nav>
+        </div>
+      </aside>
+
+      <main class="flex-1 max-w-4xl">
+        
+        <div class="mb-12">
+          <span class="inline-block px-3 py-1 mb-4 text-xs font-bold tracking-widest text-white uppercase bg-[color:var(--accent)] rounded-sm">Guideline Document</span>
+          <h1 class="text-4xl md:text-5xl font-black text-slate-900 leading-tight">ESG Risk Assessment Guideline</h1>
+          <p class="mt-6 text-xl text-slate-600 leading-relaxed border-l-4 border-slate-200 pl-6 italic">
+            Loob Holding is committed to responsible and sustainable sourcing practices. Our Supplier ESG Risk Assessment evaluates suppliers’ environmental, social, and governance (ESG) performance to ensure alignment with our sustainability standards.
+          </p>
+        </div>
+
+        <div class="space-y-16">
+          
+          <section id="intro" class="section-card">
+            <div class="flex items-center gap-3 mb-4">
+               <div class="h-8 w-1 bg-[color:var(--primary)]"></div>
+               <h2 class="text-2xl font-bold text-slate-900">1. Introduction</h2>
+            </div>
+            <p class="text-slate-700 leading-relaxed">
+              Loob Holding is committed to responsible and sustainable sourcing practices. Our Supplier ESG Risk Assessment evaluates suppliers’ environmental, social, and governance (ESG) performance to ensure alignment with our sustainability standards and to identify areas for improvement. The assessment enables Loob to:
+            </p>
+            <div class="mt-6 grid grid-cols-1 md:grid-cols-3 gap-4">
+                <div class="p-4 bg-white border border-slate-200 rounded-xl shadow-sm">
+                    <p class="text-sm font-semibold text-slate-900">Identify potential ESG-related risks in our supply chain.</p>
+                </div>
+                <div class="p-4 bg-white border border-slate-200 rounded-xl shadow-sm">
+                    <p class="text-sm font-semibold text-slate-900">Support suppliers in improving their ESG maturity.</p>
+                </div>
+                <div class="p-4 bg-white border border-slate-200 rounded-xl shadow-sm">
+                    <p class="text-sm font-semibold text-slate-900">Strengthen long-term, responsible partnerships.</p>
+                </div>
+            </div>
+          </section>
+
+          <section id="overview" class="section-card">
+            <h2 class="text-2xl font-bold text-slate-900 mb-6">2. Overview of ESG Risk Assessment Process</h2>
+            <p class="text-slate-700 mb-8">Each supplier’s ESG risk is evaluated through five key components:</p>
+            
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <div class="p-6 bg-white border-t-2 border-[color:var(--primary)] rounded-xl shadow-sm">
+                <h3 class="font-bold text-slate-900">2.1 Score Components</h3>
+                <ul class="mt-4 space-y-3 text-sm text-slate-600">
+                  <li class="flex gap-2"><span class="text-[color:var(--accent)] font-bold">01</span> <strong>Sales Score:</strong> Annual sales value to Loob.</li>
+                  <li class="flex gap-2"><span class="text-[color:var(--accent)] font-bold">02</span> <strong>Product Score:</strong> Criticality level.</li>
+                  <li class="flex gap-2"><span class="text-[color:var(--accent)] font-bold">03</span> <strong>Environmental:</strong> Practices and initiatives.</li>
+                  <li class="flex gap-2"><span class="text-[color:var(--accent)] font-bold">04</span> <strong>Social Score:</strong> Workforce practices.</li>
+                  <li class="flex gap-2"><span class="text-[color:var(--accent)] font-bold">05</span> <strong>Governance Score:</strong> Ethics and compliance.</li>
+                </ul>
+              </div>
+
+              <div class="p-6 bg-[color:var(--primary)] text-white rounded-xl shadow-lg">
+                <h3 class="font-bold text-white mb-4">2.2 Scoring Scale</h3>
+                <div class="space-y-4">
+                  <div class="flex items-center justify-between border-b border-white/20 pb-2">
+                    <span class="px-3 py-1 bg-red-500 rounded text-xs font-bold">Score 1</span>
+                    <span class="text-sm">High risk / Weak practice</span>
+                  </div>
+                  <div class="flex items-center justify-between border-b border-white/20 pb-2">
+                    <span class="px-3 py-1 bg-yellow-500 rounded text-xs font-bold text-slate-900">Score 2</span>
+                    <span class="text-sm">Moderate risk / Partial</span>
+                  </div>
+                  <div class="flex items-center justify-between">
+                    <span class="px-3 py-1 bg-green-500 rounded text-xs font-bold">Score 3</span>
+                    <span class="text-sm">Low risk / Strong practice</span>
+                  </div>
+                </div>
               </div>
             </div>
-		
-    </header>
-    <!-- Header is now properly closed here -->
+          </section>
 
-    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <!-- Main content card -->
-        <div class="bg-white rounded-3xl shadow-xl p-8 border-t-4 border-[color:var(--accent)]">
-            <a href="index.html" class="text-sm text-[color:var(--primary)] hover:underline mb-4 inline-block">&larr; Back to Toolkit Home</a>
-            <h1 class="text-3xl md:text-4xl font-extrabold text-gray-900 leading-tight mt-2">ESG Risk Assessment Guideline</h1>
-            
-            <!-- NEW INTRODUCTION SECTION -->
-            <p class="mt-3 text-lg text-gray-600 border-b pb-6">
-                Loob Holding is committed to responsible and sustainable sourcing practices. Our Supplier ESG Risk Assessment evaluates suppliers’ environmental, social, and governance (ESG) performance to ensure alignment with our sustainability standards and to identify areas for improvement.
-                The assessment enables Loob to identify potential ESG-related risks in our supply chain, support suppliers in improving their ESG maturity, and strengthen long-term, responsible partnerships.
-            </p>
-
-            <div class="mt-8 space-y-10">
-                
-                <!-- Section 1: Introduction (New Section 1) -->
-                <section>
-                    <h2 class="text-2xl font-bold text-[color:var(--primary)]">1. Introduction</h2>
-                    <p class="mt-3 text-gray-700 leading-relaxed">
-                        Loob Holding is committed to responsible and sustainable sourcing practices. Our Supplier ESG Risk Assessment evaluates suppliers’ environmental, social, and governance (ESG) performance to ensure alignment with our sustainability standards and to identify areas for improvement.
-                        The assessment enables Loob to:
-                    </p>
-                    <ul class="list-disc list-inside space-y-1 mt-3 pl-4 text-gray-700">
-                        <li>Identify potential ESG-related risks in our supply chain.</li>
-                        <li>Support suppliers in improving their ESG maturity.</li>
-                        <li>Strengthen long-term, responsible partnerships.</li>
-                    </ul>
-                </section>
-
-                <!-- Section 2: Overview of ESG Risk Assessment Process (New Section 2) -->
-                <section>
-                    <h2 class="text-2xl font-bold text-[color:var(--primary)]">2. Overview of ESG Risk Assessment Process</h2>
-                    <p class="mt-3 text-gray-700">
-                        Each supplier’s ESG risk is evaluated through five key components, combining operational exposure with ESG performance:
-                    </p>
-                    
-                    <div class="mt-4">
-                      <h3 class="text-lg font-semibold text-gray-900">2.1 Score Components</h3>
-                      <ul class="mt-3 space-y-1 text-gray-800">
-                        <li class="grid grid-cols-[180px_auto]">
-                          <span class="font-medium">Sales Score</span>
-                          <span>– Annual sales value to Loob Holding.</span>
-                        </li>
-                        <li class="grid grid-cols-[180px_auto]">
-                          <span class="font-medium">Product/Service Score</span>
-                          <span>– Criticality and dependency level of the supplied category.</span>
-                        </li>
-                        <li class="grid grid-cols-[180px_auto]">
-                          <span class="font-medium">Environmental Score</span>
-                          <span>– Self-declared environmental practices and initiatives.</span>
-                        </li>
-                        <li class="grid grid-cols-[180px_auto]">
-                          <span class="font-medium">Social Score</span>
-                          <span>– Self-declared social responsibility and workforce practices.</span>
-                        </li>
-                        <li class="grid grid-cols-[180px_auto]">
-                          <span class="font-medium">Governance Score</span>
-                          <span>– Self-declared governance, ethics, and compliance practices.</span>
-                        </li>
-                      </ul>
-                    </div>
-
-                    <h3 class="font-semibold text-xl text-[color:var(--primary)] mt-6">2.2 Scoring Scale</h3>
-                    <div class="mt-3 overflow-x-auto rounded-lg shadow-md border border-gray-200">
-                        <table class="min-w-full text-sm">
-                            <thead class="bg-gray-200 text-gray-700">
-                                <tr>
-                                    <th class="px-4 py-3 text-left font-medium rounded-tl-lg w-1/5">Score</th>
-                                    <th class="px-4 py-3 text-left font-medium rounded-tr-lg">Risk Description</th>
-                                </tr>
-                            </thead>
-                            <tbody class="divide-y divide-gray-100">
-                                <tr class="bg-white hover:bg-gray-50">
-                                    <td class="px-4 py-3 font-medium text-red-600">1</td>
-                                    <td class="px-4 py-3 text-gray-700">High risk / Weak ESG practice</td>
-                                </tr>
-                                <tr class="bg-white hover:bg-gray-50">
-                                    <td class="px-4 py-3 font-medium text-yellow-600">2</td>
-                                    <td class="px-4 py-3 text-gray-700">Moderate risk / Partial compliance</td>
-                                </tr>
-                                <tr class="bg-white hover:bg-gray-50">
-                                    <td class="px-4 py-3 font-medium text-green-600">3</td>
-                                    <td class="px-4 py-3 text-gray-700">Low risk / Strong ESG practice</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </section>
-
-                <!-- Section 3: Methodology of Scoring (New Section 3) -->
-                <section>
-                    <h2 class="text-2xl font-bold text-[color:var(--primary)]">3. Methodology of Scoring</h2>
-                    <p class="mt-3 text-gray-700">
-                        The overall ESG risk score is derived using the following formula:
-                    </p>
-                    <div class="mt-3 bg-gray-100 border border-gray-200 p-6 rounded-xl shadow-inner">
-                        <p class="font-mono text-lg md:text-xl text-gray-800 break-words">
-                            <strong>ESG Risk Score</strong> = (Product/Service score &times; w<sub>1</sub>) + (Sales score &times; w<sub>2</sub>) + (Environmental score &times; w<sub>3</sub>) + (Social score &times; w<sub>4</sub>) + (Governance score &times; w<sub>5</sub>)
-                        </p>
-                        <p class="mt-4 text-sm text-gray-600 italic">
-                            where w₁–w₅ represent the internal weightage assigned to each component. Each “w” value is determined by Loob Holding based on materiality and internal risk prioritisation.
-                        </p>
-                    </div>
-                </section>
-
-                <!-- Section 4: Scoring Matrix (New Section 4) -->
-                <section>
-                    <h2 class="text-2xl font-bold text-[color:var(--primary)]">4. Scoring Matrix</h2>
-                    
-                    <!-- 4.1 Product/Service Category Risk Score -->
-                    <h3 class="font-semibold text-xl text-[color:var(--primary)] mt-6">4.1 Product/Service Category Risk Score</h3>
-                    <div class="mt-3 overflow-x-auto rounded-lg shadow-lg border border-gray-200">
-                        <table class="min-w-full text-sm">
-                            <thead class="bg-gray-200 text-gray-700">
-                                <tr>
-                                    <th class="px-4 py-3 text-left font-medium rounded-tl-lg">Product/Service Category</th>
-                                    <th class="px-4 py-3 text-left font-medium w-1/12">Score</th>
-                                    <th class="px-4 py-3 text-left font-medium rounded-tr-lg">Risk Justification</th>
-                                </tr>
-                            </thead>
-                            <tbody class="divide-y divide-gray-100">
-                                <tr class="bg-white hover:bg-red-50/50">
-                                    <td class="px-4 py-3 font-medium">Food & Beverage Ingredients</td>
-                                    <td class="px-4 py-3 font-semibold text-red-600">1</td>
-                                    <td class="px-4 py-3 text-gray-700">High ESG exposure due to raw material sourcing, food safety, traceability, and environmental impact (e.g., agriculture, livestock).</td>
-                                </tr>
-                                <tr class="bg-white hover:bg-yellow-50/50">
-                                    <td class="px-4 py-3 font-medium">Packaging</td>
-                                    <td class="px-4 py-3 font-semibold text-yellow-600">2</td>
-                                    <td class="px-4 py-3 text-gray-700">Medium ESG impact linked to material use, recyclability, and waste management.</td>
-                                </tr>
-                                <tr class="bg-white hover:bg-yellow-50/50">
-                                    <td class="px-4 py-3 font-medium">Logistics & Supply Chain Services</td>
-                                    <td class="px-4 py-3 font-semibold text-yellow-600">2</td>
-                                    <td class="px-4 py-3 text-gray-700">Moderate ESG exposure such as transport emissions and driver working conditions.</td>
-                                </tr>
-                                <tr class="bg-white hover:bg-green-50/50">
-                                    <td class="px-4 py-3 font-medium">Equipment & Machinery</td>
-                                    <td class="px-4 py-3 font-semibold text-green-600">3</td>
-                                    <td class="px-4 py-3 text-gray-700">Limited ESG footprint during use; risks mainly arise in upstream manufacturing.</td>
-                                </tr>
-                                <tr class="bg-white hover:bg-green-50/50">
-                                    <td class="px-4 py-3 font-medium">Services</td>
-                                    <td class="px-4 py-3 font-semibold text-green-600">3</td>
-                                    <td class="px-4 py-3 text-gray-700">Minimal ESG exposure; typically office-based or professional services.</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-
-                    <!-- 4.2 Sales Category Risk Score -->
-                    <h3 class="font-semibold text-xl text-[color:var(--primary)] mt-8">4.2 Sales Category Risk Score</h3>
-                    <p class="mt-3 text-sm text-gray-600 italic">(Higher sales exposure indicates greater operational dependency and potential ESG risk.)</p>
-                    <div class="mt-3 overflow-x-auto rounded-lg shadow-lg border border-gray-200">
-                        <table class="min-w-full text-sm">
-                            <thead class="bg-gray-200 text-gray-700">
-                                <tr>
-									<th class="px-4 py-3 text-left font-medium rounded-tl-lg w-[33%]">Supplier Label</th>
-                                    <th class="px-4 py-3 text-left font-medium w-[33%]">Annual Sales Range (RM)</th>
-                                    <th class="px-4 py-3 text-left font-medium rounded-tr-lg w-[33%]">Score</th>
-                                </tr>
-                            </thead>
-                            <tbody class="divide-y divide-gray-100">
-                                <tr class="bg-white hover:bg-red-50/50">
-                                    <td class="px-4 py-3 text-gray-700">Strategic / High Value</td>
-									<td class="px-4 py-3 font-medium">Above 10 million</td>
-                                    <td class="px-4 py-3 font-semibold text-red-600">1</td>
-                                </tr>
-                                <tr class="bg-white hover:bg-red-50/50">
-                                    <td class="px-4 py-3 text-gray-700">Key Partner</td>
-									<td class="px-4 py-3 font-medium">7 – 10 million</td>
-                                    <td class="px-4 py-3 font-semibold text-red-600">1</td>
-                                </tr>
-                                <tr class="bg-white hover:bg-yellow-50/50">
-									<td class="px-4 py-3 text-gray-700">Core Supplier</td>
-                                    <td class="px-4 py-3 font-medium">5 – 7 million</td>
-                                    <td class="px-4 py-3 font-semibold text-yellow-600">2</td>
-                                </tr>
-                                <tr class="bg-white hover:bg-yellow-50/50">
-                                    <td class="px-4 py-3 text-gray-700">Mid-Tier Supplier</td>
-									<td class="px-4 py-3 font-medium">3 – 5 million</td>
-                                    <td class="px-4 py-3 font-semibold text-yellow-600">2</td>
-                                </tr>
-                                <tr class="bg-white hover:bg-green-50/50">
-                                    <td class="px-4 py-3 text-gray-700">Low-Volume Supplier</td>
-									<td class="px-4 py-3 font-medium">Below 3 million</td>
-                                    <td class="px-4 py-3 font-semibold text-green-600">3</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                    
-                    <h3 class="font-semibold text-xl text-[color:var(--primary)] mt-8">4.3 ESG Risk Score</h3>
-                    <p class="mt-3 text-gray-700">
-                        Suppliers complete a self-declaration form comprising questions across three ESG pillars. Responses are scored (1–3) based on the maturity and implementation of practices.
-                    </p>
-                    <div class="mt-4 overflow-x-auto rounded-lg shadow-lg border border-gray-200">
-                        <table class="min-w-full text-sm">
-                            <thead class="bg-gray-200 text-gray-700">
-                                <tr>
-                                    <th class="px-4 py-3 text-left font-medium rounded-tl-lg w-1/4">ESG Pillar</th>
-                                    <th class="px-4 py-3 text-left font-medium rounded-tr-lg">Assessment Focus</th>
-                                </tr>
-                            </thead>
-                            <tbody class="divide-y divide-gray-100">
-                                <tr class="bg-white hover:bg-gray-50">
-                                    <td class="px-4 py-3 font-semibold text-gray-800">Environmental</td>
-                                    <td class="px-4 py-3 text-gray-700">Waste management, energy use, emissions control, environmental policies.</td>
-                                </tr>
-                                <tr class="bg-white hover:bg-gray-50">
-                                    <td class="px-4 py-3 font-semibold text-gray-800">Social</td>
-                                    <td class="px-4 py-3 text-gray-700">Labour conditions, workplace safety, diversity and inclusion, community engagement.</td>
-                                </tr>
-                                <tr class="bg-white hover:bg-gray-50">
-                                    <td class="px-4 py-3 font-semibold text-gray-800">Governance</td>
-                                    <td class="px-4 py-3 text-gray-700">Business ethics, anti-corruption, data privacy, regulatory compliance.</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </section>
-
-				<!-- Section 5: ESG Risk Categorisation & Recommended Action (Merged Section) -->
-				<section>
-					<h2 class="text-2xl font-bold text-[color:var(--primary)]">5. ESG Risk Categorisation & Recommended Action</h2>
-					<p class="mt-3 text-gray-700">
-						The final ESG Risk Score determines the supplier’s risk category and the corresponding follow-up action by Loob Holding:
-					</p>
-					<div class="mt-4 overflow-x-auto rounded-lg shadow-lg border border-gray-200">
-						<table class="min-w-full text-sm">
-							<thead class="bg-gray-200 text-gray-700">
-								<tr>
-									<th class="px-4 py-3 text-left font-medium rounded-tl-lg w-[15%]">ESG Risk Category</th>
-									<th class="px-4 py-3 text-left font-medium w-[15%]">Score</th>
-									<th class="px-4 py-3 text-left font-medium w-[35%]">Description</th>
-									<th class="px-4 py-3 text-left font-medium rounded-tr-lg w-[45%]">Recommended Action</th>
-								</tr>
-							</thead>
-							<tbody class="divide-y divide-gray-100">
-								<tr class="bg-white hover:bg-red-50/50">
-									<td class="px-4 py-3 font-semibold text-red-600">High Risk</td>
-									<td class="px-4 py-3 font-semibold text-red-600">1.0 – 1.7</td>
-									<td class="px-4 py-3 text-gray-700">Supplier has limited ESG practices or awareness; may present reputational or operational risk.</td>
-									<td class="px-4 py-3 text-gray-700">Prioritised for engagement, corrective action plan, or re-evaluation based on ESG gaps identified.</td>
-								</tr>
-								<tr class="bg-white hover:bg-yellow-50/50">
-									<td class="px-4 py-3 font-semibold text-yellow-600">Moderate Risk</td>
-									<td class="px-4 py-3 font-semibold text-yellow-600">1.8 – 2.4</td>
-									<td class="px-4 py-3 text-gray-700">Supplier shows partial ESG compliance; key areas for improvement exist.</td>
-									<td class="px-4 py-3 text-gray-700">Encouraged to enhance ESG practices through capacity building, guidance, or monitoring.</td>
-								</tr>
-								<tr class="bg-white hover:bg-green-50/50">
-									<td class="px-4 py-3 font-semibold text-green-600">Low Risk</td>
-									<td class="px-4 py-3 font-semibold text-green-600">2.5 – 3.0</td>
-									<td class="px-4 py-3 text-gray-700">Supplier demonstrates strong ESG performance and alignment with Loob’s sustainability standards.</td>
-									<td class="px-4 py-3 text-gray-700">Recognised as preferred partner; may be featured as a benchmark supplier for ESG excellence.</td>
-								</tr>
-							</tbody>
-						</table>
-					</div>
-				</section>
-
-
-                <!-- Section 6: Frequency and Data Handling (New Section 6) -->
-                <section>
-                    <h2 class="text-2xl font-bold text-[color:var(--primary)]">6. Frequency and Data Handling</h2>
-                    <ul class="list-disc list-inside space-y-1 mt-3 pl-4 text-gray-700">
-                        <li>Assessments are conducted annually or during onboarding or contract renewal.</li>
-                        <li>Supplier data is treated confidentially and used solely for internal ESG evaluation.</li>
-                        <li>Suppliers may update their ESG data periodically or share certification updates.</li>
-                    </ul>
-                </section>
-
-                <!-- Section 7: Continuous Improvement (New Section 7) -->
-                <section>
-                    <h2 class="text-2xl font-bold text-[color:var(--primary)]">7. Continuous Improvement</h2>
-                    <p class="mt-3 text-gray-700">
-                        Loob Holding works collaboratively with suppliers to improve overall sustainability performance. Suppliers identified with higher risk levels are provided support and engagement opportunities to strengthen their ESG capabilities.
-                    </p>
-                </section>
-
-                <!-- Section 8: Contact (Replaces old Section 8) -->
-                <section>
-                    <h2 class="text-2xl font-bold text-[color:var(--primary)]">8. Contact</h2>
-                    <p class="mt-3 text-gray-700">
-                        For inquiries or assistance regarding the ESG Risk Assessment:
-                    </p>
-                    <ul class="list-none space-y-2 mt-3 text-gray-700">
-                        <li class="flex items-center gap-2">
-                            <svg class="w-5 h-5 text-[color:var(--accent)]" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-mail-icon lucide-mail">
-								<path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7"/><rect x="2" y="4" width="20" height="16" rx="2"/>
-                            </svg>
-                            <span class="font-medium">Email:</span> <a href="mailto:sustainability@loob.com.my" class="text-[color:var(--primary)] hover:underline">sustainability@loob.com.my</a>
-                        </li>
-                    </ul>
-                </section>
+          <section id="methodology" class="section-card">
+            <h2 class="text-2xl font-bold text-slate-900 mb-6">3. Methodology of Scoring</h2>
+            <div class="bg-slate-900 rounded-2xl p-8 text-center shadow-2xl relative overflow-hidden">
+                <div class="absolute top-0 right-0 p-4 text-slate-800 font-mono text-xs uppercase opacity-20">Calculation_v1.0</div>
+                <p class="text-slate-400 text-xs font-bold tracking-widest uppercase mb-4">Overall ESG Risk Score Formula</p>
+                <div class="text-white font-mono text-lg md:text-2xl leading-relaxed">
+                    (Product &times; <span class="text-[color:var(--accent)]">w₁</span>) + 
+                    (Sales &times; <span class="text-[color:var(--accent)]">w₂</span>) + 
+                    (Env &times; <span class="text-[color:var(--accent)]">w₃</span>) + 
+                    (Soc &times; <span class="text-[color:var(--accent)]">w₄</span>) + 
+                    (Gov &times; <span class="text-[color:var(--accent)]">w₅</span>)
+                </div>
+                <p class="mt-6 text-slate-400 text-sm italic">
+                    Weightage (w₁–w₅) is determined based on materiality and internal prioritisation.
+                </p>
             </div>
+          </section>
+
+          <section id="matrix" class="space-y-8">
+            <h2 class="text-2xl font-bold text-slate-900">4. Scoring Matrix</h2>
+            
+            <div>
+                <h3 class="text-lg font-bold text-slate-800 mb-4 flex items-center gap-2">
+                    <span class="w-2 h-2 rounded-full bg-[color:var(--accent)]"></span>
+                    4.1 Product/Service Category Risk Score
+                </h3>
+                <div class="overflow-hidden bg-white border border-slate-200 rounded-xl shadow-sm">
+                    <table class="w-full text-left text-sm border-collapse">
+                        <thead>
+                            <tr class="bg-slate-50 border-b border-slate-200">
+                                <th class="px-6 py-4 font-bold text-slate-900">Category</th>
+                                <th class="px-6 py-4 font-bold text-slate-900 w-20">Score</th>
+                                <th class="px-6 py-4 font-bold text-slate-900">Justification</th>
+                            </tr>
+                        </thead>
+                        <tbody class="divide-y divide-slate-100">
+                            <tr class="hover:bg-slate-50 transition"><td class="px-6 py-4 font-medium">Food & Beverage Ingredients</td><td class="px-6 py-4 text-red-600 font-bold text-center">1</td><td class="px-6 py-4 text-slate-600">High exposure: raw materials, food safety, traceability.</td></tr>
+                            <tr class="hover:bg-slate-50 transition"><td class="px-6 py-4 font-medium">Packaging</td><td class="px-6 py-4 text-yellow-600 font-bold text-center">2</td><td class="px-6 py-4 text-slate-600">Material use, recyclability, waste management.</td></tr>
+                            <tr class="hover:bg-slate-50 transition"><td class="px-6 py-4 font-medium">Logistics</td><td class="px-6 py-4 text-yellow-600 font-bold text-center">2</td><td class="px-6 py-4 text-slate-600">Transport emissions and working conditions.</td></tr>
+                            <tr class="hover:bg-slate-50 transition"><td class="px-6 py-4 font-medium">Equipment</td><td class="px-6 py-4 text-green-600 font-bold text-center">3</td><td class="px-6 py-4 text-slate-600">Risks mainly arise in upstream manufacturing.</td></tr>
+                            <tr class="hover:bg-slate-50 transition"><td class="px-6 py-4 font-medium">Services</td><td class="px-6 py-4 text-green-600 font-bold text-center">3</td><td class="px-6 py-4 text-slate-600">Minimal ESG exposure; professional services.</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div>
+                <h3 class="text-lg font-bold text-slate-800 mb-4 flex items-center gap-2">
+                    <span class="w-2 h-2 rounded-full bg-[color:var(--accent)]"></span>
+                    4.2 Sales Category Risk Score
+                </h3>
+                <div class="overflow-hidden bg-white border border-slate-200 rounded-xl shadow-sm">
+                    <table class="w-full text-left text-sm border-collapse">
+                        <thead class="bg-slate-50 border-b border-slate-200 text-slate-900">
+                            <tr><th class="px-6 py-4 font-bold">Label</th><th class="px-6 py-4 font-bold">Annual Sales (RM)</th><th class="px-6 py-4 font-bold text-center">Score</th></tr>
+                        </thead>
+                        <tbody class="divide-y divide-slate-100 text-slate-600">
+                            <tr><td class="px-6 py-4">Strategic</td><td class="px-6 py-4 font-medium">Above 10 million</td><td class="px-6 py-4 text-red-600 font-bold text-center">1</td></tr>
+                            <tr><td class="px-6 py-4">Key Partner</td><td class="px-6 py-4 font-medium">7 – 10 million</td><td class="px-6 py-4 text-red-600 font-bold text-center">1</td></tr>
+                            <tr><td class="px-6 py-4">Core Supplier</td><td class="px-6 py-4 font-medium">5 – 7 million</td><td class="px-6 py-4 text-yellow-600 font-bold text-center">2</td></tr>
+                            <tr><td class="px-6 py-4">Mid-Tier</td><td class="px-6 py-4 font-medium">3 – 5 million</td><td class="px-6 py-4 text-yellow-600 font-bold text-center">2</td></tr>
+                            <tr><td class="px-6 py-4">Low-Volume</td><td class="px-6 py-4 font-medium">Below 3 million</td><td class="px-6 py-4 text-green-600 font-bold text-center">3</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+          </section>
+
+          <section id="categorisation" class="section-card">
+            <h2 class="text-2xl font-bold text-slate-900 mb-6">5. ESG Risk Categorisation & Recommended Action</h2>
+            <div class="space-y-4">
+                <div class="p-6 bg-red-50 border border-red-100 rounded-2xl flex flex-col md:flex-row gap-4">
+                    <div class="md:w-32"><span class="text-red-700 font-black text-lg">HIGH</span><br><span class="text-xs text-red-600">1.0 – 1.7</span></div>
+                    <div class="flex-1 text-sm"><p class="font-bold text-red-800">Limited ESG awareness.</p><p class="text-red-700 mt-1 italic">Action: Prioritised engagement and corrective action plans.</p></div>
+                </div>
+                <div class="p-6 bg-yellow-50 border border-yellow-100 rounded-2xl flex flex-col md:flex-row gap-4">
+                    <div class="md:w-32"><span class="text-yellow-700 font-black text-lg">MODERATE</span><br><span class="text-xs text-yellow-600">1.8 – 2.4</span></div>
+                    <div class="flex-1 text-sm"><p class="font-bold text-yellow-800">Partial ESG compliance.</p><p class="text-yellow-700 mt-1 italic">Action: Capacity building and enhanced monitoring.</p></div>
+                </div>
+                <div class="p-6 bg-green-50 border border-green-100 rounded-2xl flex flex-col md:flex-row gap-4">
+                    <div class="md:w-32"><span class="text-green-700 font-black text-lg">LOW</span><br><span class="text-xs text-green-600">2.5 – 3.0</span></div>
+                    <div class="flex-1 text-sm"><p class="font-bold text-green-800">Strong performance.</p><p class="text-green-700 mt-1 italic">Action: Recognised as preferred partner / Benchmark supplier.</p></div>
+                </div>
+            </div>
+          </section>
+
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <section id="handling" class="p-8 bg-white border border-slate-200 rounded-2xl shadow-sm">
+                <h2 class="text-xl font-bold text-slate-900 mb-4">6. Data Handling</h2>
+                <ul class="space-y-3 text-sm text-slate-600">
+                    <li class="flex gap-3"><span>&bull;</span> Assessments conducted annually or during onboarding.</li>
+                    <li class="flex gap-3"><span>&bull;</span> Data treated confidentially for internal evaluation.</li>
+                    <li class="flex gap-3"><span>&bull;</span> Periodic updates for certification changes.</li>
+                </ul>
+            </section>
+            <section id="improvement" class="p-8 bg-white border border-slate-200 rounded-2xl shadow-sm">
+                <h2 class="text-xl font-bold text-slate-900 mb-4">7. Continuous Improvement</h2>
+                <p class="text-sm text-slate-600 leading-relaxed">
+                    Loob Holding works collaboratively with suppliers to improve overall sustainability performance. Suppliers with higher risk levels are provided support opportunities to strengthen their ESG capabilities.
+                </p>
+            </section>
+          </div>
+
+          <section id="contact" class="p-10 bg-slate-900 text-white rounded-3xl text-center">
+            <h2 class="text-2xl font-bold mb-4">8. Have Questions?</h2>
+            <p class="text-slate-400 mb-8">For inquiries regarding the ESG Risk Assessment, reach out to our team.</p>
+            <a href="mailto:sustainability@loob.com.my" class="inline-flex items-center gap-3 px-8 py-4 bg-[color:var(--accent)] text-white font-bold rounded-full hover:scale-105 transition transform">
+                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+                sustainability@loob.com.my
+            </a>
+          </section>
+
         </div>
-    </main>
+        
+        <footer class="mt-20 py-10 border-t border-slate-200 text-center">
+            <p class="text-sm text-slate-400">&copy; 2026 Loob Holding Sdn Bhd. All rights reserved.</p>
+        </footer>
+      </main>
+    </div>
+  </div>
+
 </body>
 </html>
-
-
-
-
-
-
-
-
